@@ -30,7 +30,7 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    background-color: ; 
+    background-color: #dee1e7; 
     box-shadow: rgba(15, 52, 96, 0.5) -15px 0px 25px -15px inset;
     height: 100%;
     margin: 0px;
