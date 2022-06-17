@@ -37,9 +37,46 @@ body{
     font-family: poppinsMedium;
 }
 
-.myself{
+a{
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+}
+
+.navbar{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90px;
+    background-color: #16213E;
+    box-shadow: rgba(22, 33, 62, 0.4) 0px 7px 29px 0px;
+}
+
+.ul-navbar{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+li{
+    list-style-type: none;
+    margin: auto 30px;
+    letter-spacing: 2px;
+    font-family: poppinsLight;
+}
+
+
+#hello, #my-skills, #my-projects, #contact-me, h2{
+    color: #080808;
+    font-family: poppinsSemiBold;
+    margin-bottom: 0px;
+}
+
+.myself{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
 }
 
 .who-im-i{
@@ -47,23 +84,73 @@ body{
     flex-direction: column;
 }
 
+.my-name{
+    color: #16213E;
+    font-size: 60px;
+    font-family: poppinsBold;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+#hello{
+    font-size: 30px;
+}
+
+.button{
+    margin-top: 40px;
+    background-color: #E94560;
+    color: white;
+    width: 120px; 
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.pic{
+    max-width: 450px; 
+}
+
+.skills{
+    background-color: #F2F2F2;
+}
+
 footer{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #1A1A2E;
+}
+
+.ul-footer{
+    font-size: 14px;
+    margin-top: 50px;
 }
 
 .icons-footer{
+    font-size: 30px;
     display: flex;
     flex-direction: row;
+    margin: 20px;
 }
 
-
-a{
-    text-decoration: none;
+.fa-whatsapp, .fa-envelope, .devicon-github-original, .devicon-linkedin-plain{
+    margin: 0px 20px;
 }
 
 strong{
     font-family: remachine;
     font-weight: 300;
     font-size: 30px;
+}
+
+.made-with{
+    color: white;
+    font-size: 15px;
+    align-self: flex-end;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.made-jopay{
+    color: #E94560;
 }

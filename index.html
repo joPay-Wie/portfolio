@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav class="navbar"> 
-            <ul>
+            <ul class="ul-navbar">
                 <li> <a href="#hello"> HOLA </a> </li>
                 <li> <a href="#my-skills"> CONOCIMIENTOS </a> </li>
                 <li> <a href="#my-projects"> PROYECTOS </a> </li>
@@ -23,15 +23,15 @@
 
     <main class="myself"> 
         <div class="who-im-i">
-            <h2> <a name="hello"> ¡Hola! Soy </a> </h2>
-            <h1> Josefina Payer </h1>
+            <h2> <a id="hello"> ¡Hola! Soy </a> </h2>
+            <h1 class="my-name"> Josefina Payer </h1>
             <span> 
                 Pero pueden decirme <strong>JoPay</strong>. <br> 
                 Soy desarrolladora Frontend, 
                 licenciada en Psicología 
                 y amante del diseño.  
             </span>
-            <a name="my-skills"> Lo que hago </a>
+            <a href="#my-skills" class="button"> LO QUE HAGO </a>
         </div>
             <figure>
                 <img src="assets/undraw_programmer_re_owql.svg" alt="Woman programming" class="pic"> </img>
@@ -39,11 +39,11 @@
     </main>
 
     <section class="skills"> 
-        <h1> <a name="my-skills"> Mis conocimientos </a> </h1> 
+        <h1> <a id="my-skills"> Mis conocimientos </a> </h1> 
         <p> 
-            Con la mirada puesta siempre en cuidar al usuario y garantizar la calidad al cliente. 
             Pongo muchísima atención a los detalles, para que tu web no solo funcione de forma correcta sino que además se vea 
-            exactamente como vos querés. Que nadie ponga límite al horizonte de tu creatividad.
+            exactamente como vos querés, con la mirada puesta siempre en cuidar al usuario y garantizarte un trabajo de calidad. 
+            Que nadie ponga límite al horizonte de tu creatividad.
         </p>
         <div></div>
         <div></div>
@@ -55,7 +55,7 @@
 
     <blockquote class="quote">
         <figure> 
-            <img src="https://m.media-amazon.com/images/I/612yf9JG2oL._SX450_.jpg" alt="Ijeoma Umebinyuo" height="150px">
+            <img src="https://m.media-amazon.com/images/I/612yf9JG2oL._SX450_.jpg" alt="Ijeoma Umebinyuo" height="150px" class="ijeoma">
         </figure>
         <i class="fa-solid fa-quote-right"></i>
         <p> “Start now. Start where you are. Start with fear. Start with pain. 
@@ -67,7 +67,7 @@
     </blockquote>
   
     <section class="projects"> 
-        <h1> <a name="my-projects"> Mis proyectos </a> </h1>
+        <h1> <a id="my-projects"> Mis proyectos </a> </h1>
         <p> </p>
         <div></div>
         <div></div>
@@ -79,7 +79,7 @@
 
     <section class="contact"> 
         <div>
-            <h2> <a name="contact-me"> Contactame </a> </h2>
+            <h2> <a id="contact-me"> Contactame </a> </h2>
             <p> </p>
             <span> </span> 
             <span> </span>
@@ -102,12 +102,13 @@
         <div>
             <h2> Escribime </h2>
             <!-- FORMULARIO -->
+
         </div>
     </section>
 
   <footer> 
     <nav class="foot-navbar">
-        <ul>
+        <ul class="ul-navbar">
             <li> <a href="#hello"> HOLA </a> </li>
             <li> <a href="#my-skills"> CONOCIMIENTOS </a> </li>
             <li> <a href="#my-projects"> PROYECTOS </a> </li>
@@ -130,7 +131,7 @@
         </a>
     </div>
 
-    <span> Made with &#128154; by <strong>JoPay</strong> </span>
+    <span class="made-with"> Made with &#128154; by <strong class="made-jopay">JoPay</strong> </span>
   </footer>
 
 </body>
