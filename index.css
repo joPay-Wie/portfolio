@@ -1,3 +1,5 @@
+/* GENERAL */
+
 @font-face{
     font-family: poppinsBold;
     src: url(assets/Poppins-Bold.ttf);
@@ -42,6 +44,17 @@ a{
     color: rgb(214, 214, 214);
 }
 
+/* NAVIGATION BAR */
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+/*¿POR QUÉ DIANTRES CUANDO NAVEGO CON LOS LINKS DE LA NAVBAR
+DEL EJEMPLO ME LLEVAN A LOS TÍTULOS (SIN QUE LOS TAPE LA NAVBAR), EN CAMBIO
+EN EL MÍO, LA NAVBAR TAPA LOS TÍTULOS? >_< */
+
 .navbar{
     display: flex;
     flex-direction: row;
@@ -65,18 +78,26 @@ li{
     font-family: poppinsLight;
 }
 
+/* INTERNAL SECTION LINKS */
 
-#hello, #my-skills, #my-projects, #contact-me, h2{
+#hello, #my-skills, #my-projects, #contact-me-title, h2{
     color: #080808;
     font-family: poppinsSemiBold;
     margin-bottom: 0px;
 }
+
+#my-skills, #my-projects, #contact-me-title {
+    font-size: 40px;
+}
+
+/* FIRST BLOCK */
 
 .myself{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 600px;
+    margin-top: 70px;
 }
 
 .who-im-i{
@@ -90,6 +111,7 @@ li{
     font-family: poppinsBold;
     margin-block-start: 0px;
     margin-block-end: 0px;
+    margin-top: -8px;
 }
 
 #hello{
@@ -110,9 +132,78 @@ li{
     max-width: 450px; 
 }
 
+/* SKILLS SECTION */
+
 .skills{
     background-color: #F2F2F2;
 }
+
+/* QUOTE SECTION */
+
+.quote{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E94560;
+    margin: 0px;
+    color: whitesmoke;
+}
+
+blockquote{
+    font-size: 1.2rem;
+    margin: 20px 100px;
+}
+
+blockquote p{
+    font-size: 25px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.ijeoma-content{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 25%;
+    width: 80%;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.fa-quote-right{
+    font-size: 100px; 
+}
+
+.ijeoma-pic{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.ijeoma-name{
+    align-self: flex-end;
+    font-size: 45px;
+    font-family: remachine;
+    letter-spacing: 2px;
+}
+
+/* PROJECTS SECTION */
+
+
+/* CONTACT ME SECTION */
+
+.icons-contact-me{
+    display: flex;
+    flex-direction: column;
+}
+.icons2, .info-icons{
+    color: #1A1A2E;
+}
+
+/* FOOTER */
 
 footer{
     display: flex;
