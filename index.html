@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar"> 
+        <nav class="header-navbar"> 
             <ul class="ul-navbar">
                 <li> <a href="#hello"> HOLA </a> </li>
                 <li> <a href="#my-skills"> CONOCIMIENTOS </a> </li>
@@ -34,13 +34,13 @@
             <a href="#my-skills" class="button"> LO QUE HAGO </a>
         </div>
             <figure>
-                <img src="assets/images/undraw_programmer_re_owql.svg" alt="Woman programming" class="pic"> </img>
+                <img src="assets/images/undraw_programmer_re_owql.svg" alt="Woman programming" class="main-pic"> </img>
             </figure>
     </main>
 
     <section class="skills"> 
         <h1> <a id="my-skills"> Mis conocimientos </a> </h1> 
-        <p> 
+        <p class="paragraph"> 
             Presto muchísima atención a los detalles, para que tu web no solo funcione de forma correcta sino que además se vea 
             exactamente como vos querés, con la mirada puesta siempre en cuidar al usuario y garantizarte un trabajo de calidad. 
             </br>
@@ -76,7 +76,7 @@
   
     <section class="projects"> 
         <h1> <a id="my-projects"> Mis proyectos </a> </h1>
-        <p> </p>
+        <p class="paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quo deserunt porro quas et vitae illum suscipit quia aliquid inventore! </p>
         <div></div>
         <div></div>
         <div></div>
@@ -85,37 +85,39 @@
         <div></div>
     </section>
 
-    <section class="contact"> 
-        <div>
-            <h2> <a id="contact-me-title"> Contactame </a> </h2>
-            <p> </p>
-            <div class="icons-contact-me">
-                <div>
-                    <a href="mailto:josefina.payer@gmail.com" target=_blank> 
-                        <i class="fa-regular fa-envelope icons2"></i>
-                        <span class="info-icons"> josefina.payer@gmail.com </span>
-                    </a>
-                    
+    <section class="contact">
+        <div class="contact-general"> 
+            <div class="contact-container">
+                <h2> <a id="contact-me-title"> Contactame </a> </h2>
+                <p class="paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis veniam rerum consequuntur quae natus laboriosam assumenda quo ducimus repudiandae. </p>
+                <div class="icons-contact-me">
+                    <div>
+                        <a href="mailto:josefina.payer@gmail.com" target=_blank> 
+                            <i class="fa-regular fa-envelope icons2"></i>
+                            <span class="info-icons"> josefina.payer@gmail.com </span>
+                        </a>
+                        
+                    </div>
+                    <div>
+                        <a href="https://github.com/joPayer" target=_blank>
+                            <i class="devicon-github-original icons2"></i>
+                            <span class="info-icons"> joPay </span> 
+                        </a> 
+                    </div>
+                    <div>   
+                    <a href="https://www.linkedin.com/in/josefina-payer" target=_blank>
+                            <i class="devicon-linkedin-plain icons2"></i>
+                            <span class="info-icons"> josefina-payer </span>  
+                        </a>
+                    </div>     
                 </div>
-                <div>
-                    <a href="https://github.com/joPayer" target=_blank>
-                        <i class="devicon-github-original icons2"></i>
-                        <span class="info-icons"> joPay </span> 
-                    </a> 
-                </div>
-                <div>   
-                <a href="https://www.linkedin.com/in/josefina-payer" target=_blank>
-                        <i class="devicon-linkedin-plain icons2"></i>
-                        <span class="info-icons"> josefina-payer </span>  
-                    </a>
-                </div>     
+            </div> 
+
+            <div class="contact-container">
+                <h2 id="contact-me-title"> Escribime </h2>
+                <!-- FORMULARIO -->
+
             </div>
-        </div> 
-
-        <div>
-            <h2 id="contact-me-title"> Escribime </h2>
-            <!-- FORMULARIO -->
-
         </div>
     </section>
 
@@ -130,10 +132,6 @@
     </nav>
     
     <div class="icons-footer"> 
-        <!--<a href="https://wa.me/+5491158564926?" target=_blank>
-            <i class="fa-brands fa-whatsapp"></i> 
-
-        </a> -->
         <a href="mailto:josefina.payer@gmail.com" target=_blank> 
             <i class="fa-regular fa-envelope"></i>
         </a>

@@ -55,7 +55,7 @@ header{
 DEL EJEMPLO ME LLEVAN A LOS TÍTULOS (SIN QUE LOS TAPE LA NAVBAR), EN CAMBIO
 EN EL MÍO, LA NAVBAR TAPA LOS TÍTULOS? >_< */
 
-.navbar{
+.header-navbar{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -80,20 +80,21 @@ li{
 
 /* INTERNAL SECTION LINKS */
 
-#hello, #my-skills, #my-projects, #contact-me-title, h2{
+#hello, #my-skills, #my-projects, #contact-me-title{
     color: #080808;
     font-family: poppinsSemiBold;
     margin-bottom: 0px;
 }
 
-#my-skills, #my-projects, #contact-me-title {
+#my-skills, #my-projects, #contact-me-title{
     font-size: 40px;
 }
 
-/* FIRST BLOCK */
+/* FIRST BLOCK: about me */
 
 .myself{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 600px;
@@ -128,9 +129,13 @@ li{
     text-align: center;
 }
 
-.pic{
+.main-pic{
     max-width: 450px; 
 }
+
+/* PARAGRAPHS */
+
+
 
 /* SKILLS SECTION */
 
@@ -192,15 +197,52 @@ blockquote p{
 
 /* PROJECTS SECTION */
 
+.projects{
+    background-color: #F2F2F2;
+}
 
 /* CONTACT ME SECTION */
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 125px;
+    background-color: #F2F2F2;
+    height: 500px;
+    width: 80%;
+    border-radius: 30px;
+    border: solid #CCCCCC 1px;
+}
+
+.contact-general{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+#contact-me-title{
+    margin: 19.92px;
+}
 
 .icons-contact-me{
     display: flex;
     flex-direction: column;
+
 }
 .icons2, .info-icons{
     color: #1A1A2E;
+}
+
+.info-icons{
+    margin-left: -10px;
 }
 
 /* FOOTER */
