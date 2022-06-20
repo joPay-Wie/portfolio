@@ -42,6 +42,8 @@ body{
 a{
     text-decoration: none;
     color: rgb(214, 214, 214);
+    margin-bottom: 0px;
+    display: flex;
 }
 
 /* NAVIGATION BAR */
@@ -69,6 +71,7 @@ EN EL MÍO, LA NAVBAR TAPA LOS TÍTULOS? >_< */
     display: flex;
     flex-direction: row;
     margin-right: 50px;
+    list-style-type: none
 }
 
 li{
@@ -82,6 +85,8 @@ li{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    height: 25px;
+    align-items: center;
 }
 
 .flag{
@@ -123,7 +128,7 @@ li{
     font-family: poppinsBold;
     margin-block-start: 0px;
     margin-block-end: 0px;
-    margin-top: -8px;
+    margin-top: -30px;
 }
 
 #hello{
