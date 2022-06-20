@@ -105,6 +105,8 @@ li{
 .title2{
     font-size: 40px;
     font-family: poppinsBold;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 /* FIRST BLOCK: about me */
@@ -143,24 +145,47 @@ li{
     text-align: center;
 }
 
+
+/* PICTURES */
+
 .main-pic{
-    max-width: 450px; 
+    max-width: 450px;
+    min-width: 450px; 
+}
+
+.little-pic{
+    max-width: 300px;
+    min-width: 200px;
 }
 
 /* PARAGRAPHS */
 
+/* SKILLS and PROJECT COMMON DIVs */
 
+.header-title{
+    display: flex;
+    flex-direction: row;
+    margin: 75px 150px;
+}
+
+.title-p{
+    display: flex;
+    flex-direction: column;
+}
 
 /* SKILLS SECTION */
 
 .skills{
     background-color: #F2F2F2;
+    height: 450px;
 }
+
+
 
 /* QUOTE SECTION */
 
 .quote{
-    height: 500px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,7 +212,8 @@ blockquote p{
     height: 25%;
     width: 80%;
     margin-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    margin-top: -15px;
 }
 
 .fa-quote-right{
@@ -204,7 +230,7 @@ blockquote p{
 
 .ijeoma-name{
     align-self: flex-end;
-    font-size: 45px;
+    font-size: 50px;
     font-family: remachine;
     letter-spacing: 2px;
 }
@@ -226,6 +252,7 @@ blockquote p{
     background-color: #F2F2F2;
     height: 500px;
     width: 80%;
+    min-width: 650px;
     border-radius: 30px;
     border: solid #CCCCCC 1px;
 }
@@ -243,7 +270,7 @@ blockquote p{
     flex-basis: 50%;
 }
 
-.icons-contact-me{
+.icons-contact{
     display: flex;
     flex-direction: column;
 
