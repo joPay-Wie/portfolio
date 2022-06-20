@@ -68,7 +68,7 @@ EN EL MÍO, LA NAVBAR TAPA LOS TÍTULOS? >_< */
 .ul-navbar{
     display: flex;
     flex-direction: row;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 li{
@@ -76,6 +76,17 @@ li{
     margin: auto 30px;
     letter-spacing: 2px;
     font-family: poppinsLight;
+}
+
+.flag-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.flag{
+    margin-left: 25px;
+    border-radius: 30px;
 }
 
 /* INTERNAL SECTION LINKS */
