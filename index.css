@@ -33,7 +33,6 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #dee1e7; 
-    box-shadow: rgba(15, 52, 96, 0.5) -15px 0px 25px -15px inset;
     height: 100%;
     margin: 0px;
     font-family: poppinsMedium;
@@ -47,6 +46,51 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* TITLES */
+
+.title1{
+    color: #080808;
+    font-family: poppinsSemiBold;
+    letter-spacing: 1px;
+}
+
+.title2{
+    color: #141414;
+    font-size: 40px;
+    font-family: poppinsBold;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
+}
+
+/* SECTION */ 
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    box-shadow: rgba(15, 52, 96, 0.5) -25px 0px 25px -25px inset;
+}
+
+/* PICTURES */
+
+.main-pic{
+    max-width: 450px;
+    min-width: 300px; 
+}
+
+.little-pic{
+    max-width: 300px;
+    min-width: 200px;
+}
+
+/* PARAGRAPHS */
+
+p{
+    margin-top: 0px;
 }
 
 /* NAVIGATION BAR */
@@ -74,11 +118,10 @@ EN EL MÍO, LA NAVBAR TAPA LOS TÍTULOS? >_< */
     display: flex;
     flex-direction: row;
     margin-right: 50px;
-    list-style-type: none
+    list-style-type: none;
 }
 
 li{
-    list-style-type: none;
     margin: auto 30px;
     letter-spacing: 2px;
     font-family: poppinsLight;
@@ -98,31 +141,16 @@ li{
     border-radius: 30px;
 }
 
-/* TITLES */
-
-.title1{
-    color: #080808;
-    font-family: poppinsSemiBold;
-    letter-spacing: 1px;
-}
-
-.title2{
-    color: #141414;
-    font-size: 40px;
-    font-family: poppinsBold;
-    margin-block-start: 0.5rem;
-    margin-block-end: 0.5rem;
-}
 
 /* FIRST BLOCK: about me */
 
-.myself{
+.myself-window{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 600px;
-    margin-top: 70px;
+    margin-top: 5%;
+    margin-left: 30px;
 }
 
 .who-im-i{
@@ -139,7 +167,6 @@ li{
     margin-top: -30px;
 }
 
-
 .button{
     margin-top: 40px;
     background-color: #E94560;
@@ -149,27 +176,12 @@ li{
     border-radius: 30px;
 }
 
-
-/* PICTURES */
-
-.main-pic{
-    max-width: 450px;
-    min-width: 300px; 
-}
-
-.little-pic{
-    max-width: 300px;
-    min-width: 200px;
-}
-
-/* PARAGRAPHS */
-
 /* SKILLS and PROJECT COMMON DIVs */
 
 .header-title{
     display: flex;
     flex-direction: row;
-    margin: 125px 150px;
+    margin: 100px 150px;
 }
 
 .title-p{
@@ -182,22 +194,16 @@ li{
 
 .skills{
     background-color: #F2F2F2;
-    height: 450px;
 }
-
-
 
 /* QUOTE SECTION */
 
 .quote{
     height: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #E94560;
     margin: 0px;
     color: whitesmoke;
+    box-shadow: rgba(15, 52, 96, 0.5) -15px 0px 25px -15px inset;
 }
 
 .fa-quote-right{
@@ -250,16 +256,18 @@ blockquote p{
 
 .contact{
     display: flex;
-    justify-content: space-around;
-    margin-top: 125px;
-    margin-bottom: 125px;
-    margin-left: 125px;
-    background-color: #F2F2F2;
+    height: 750px;
+    width: 100%;   
+}
+
+.contact-window{
     height: 500px;
     width: 80%;
     min-width: 600px;
     border-radius: 30px;
     border: solid #CCCCCC 1px;
+    background-color: #F2F2F2;
+    margin: 100px 100px;
 }
 
 .contact-general{
