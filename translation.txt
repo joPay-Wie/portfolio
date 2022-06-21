@@ -1,0 +1,32 @@
+Navbar:
+Hola
+Conocimientos
+Proyectos
+Contacto
+
+Main:
+¡Hola! Soy
+Josefina Payer
+Pero pueden decirme JoPay.
+Soy desarrolladora Frontend, licenciada en Psicología y amante del diseño.
+Lo que hago
+
+Skills:
+Mis conocimientos
+Presto mucha atención a los detalles, para que tu web no solo funcione de forma correcta sino 
+que además se vea exactamente como vos querés, con la mirada puesta siempre en cuidar al usuario y 
+garantizarte un trabajo de calidad.
+Que nadie ponga límite al horizonte de tu creatividad.
+
+Ijeoma quote:
+"Comienza ahora. Comienza donde estás. Comienza con miedo. Comienza con dolor. Comienza con dudas.
+Comienza con las manos temblando. Comienza con la voz quebrada. Comienza, y no te detengas.
+Comienza donde estés, con lo que tengas.
+Tan solo... comienza."
+
+Projects:
+Mis proyectos
+
+Contact-me:
+Contactame
+Escribime
