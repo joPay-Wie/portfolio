@@ -27,6 +27,7 @@
 
 html{
     margin: 0px;
+    font-size: 16px;
 }
 
 body{
@@ -34,14 +35,14 @@ body{
     flex-direction: column;
     background-color: #dee1e7; 
     height: 100%;
-    margin: 0px;
+    margin: 0;
     font-family: poppinsMedium;
 }
 
 a{
     text-decoration: none;
     color: rgb(214, 214, 214);
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-right: 0;
     display: flex;
     justify-content: center;
@@ -53,15 +54,15 @@ a{
 .title1{
     color: #080808;
     font-family: poppinsSemiBold;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
 }
 
 .title2{
     color: #141414;
     font-size: 40px;
     font-family: poppinsBold;
-    margin-block-start: 0.5rem;
-    margin-block-end: 0.5rem;
+    margin-block-start: 0rem;
+    margin-block-end: 0.2rem;
 }
 
 /* SECTION */ 
@@ -70,9 +71,11 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 650px;
+    align-content: center;
+    height: 900px;
+    width: 100%;
     box-shadow: rgba(15, 52, 96, 0.5) -25px 0px 25px -25px inset;
+    background-color: rgb(214, 214, 214);
 }
 
 /* PICTURES */
@@ -91,6 +94,7 @@ a{
 
 p{
     margin-top: 0px;
+
 }
 
 /* NAVIGATION BAR */
@@ -99,10 +103,6 @@ header{
     position: fixed;
     width: 100%;
 }
-
-/*¿POR QUÉ DIANTRES CUANDO NAVEGO CON LOS LINKS DE LA NAVBAR
-DEL EJEMPLO ME LLEVAN A LOS TÍTULOS (SIN QUE LOS TAPE LA NAVBAR), EN CAMBIO
-EN EL MÍO, LA NAVBAR TAPA LOS TÍTULOS? >_< */
 
 .header-navbar{
     display: flex;
@@ -144,6 +144,10 @@ li{
 
 /* FIRST BLOCK: about me */
 
+.myself{
+    height: 650px;
+}
+
 .myself-window{
     display: flex;
     flex-direction: row;
@@ -181,19 +185,57 @@ li{
 .header-title{
     display: flex;
     flex-direction: row;
-    margin: 100px 150px;
+    margin: -1rem 15rem;
+    align-self: flex-start;
 }
 
 .title-p{
     display: flex;
     flex-direction: column;
-    margin-left: -10px;
+    margin-left: -1rem;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
 }
 
 /* SKILLS SECTION */
 
 .skills{
     background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-grid{
+    justify-content: center;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.skill-box{
+    color: #2e2e31;
+    font-family: poppinsBold;
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    width: 200px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.colored{
+    font-size: 4.71em;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    display: block;
 }
 
 /* QUOTE SECTION */
@@ -207,18 +249,19 @@ li{
 }
 
 .fa-quote-right{
-    font-size: 100px; 
+    font-size: 100px;
+    align-self: center; 
 }
 
 blockquote{
     font-size: 1.2rem;
-    margin: 20px 100px;
 }
 
 blockquote p{
     font-size: 25px;
     margin-block-start: 0px;
     margin-block-end: 0px;
+    margin: 20px 100px;
 }
 
 .ijeoma-content{
@@ -256,24 +299,23 @@ blockquote p{
 
 .contact{
     display: flex;
-    height: 750px;
+    height: 700px;
     width: 100%;   
 }
 
 .contact-window{
     height: 500px;
     width: 80%;
-    min-width: 600px;
     border-radius: 30px;
     border: solid #CCCCCC 1px;
     background-color: #F2F2F2;
-    margin: 100px 100px;
+    margin: 8rem 8rem;
 }
 
 .contact-general{
     display: flex;
     flex-direction: row;
-    margin: 90px 45px;
+    margin: 2rem 5rem;
 }
 
 .contact-container{
@@ -303,6 +345,7 @@ footer{
     flex-direction: column;
     align-items: center;
     background-color: #1A1A2E;
+    width: 100%
 }
 
 .ul-footer{
