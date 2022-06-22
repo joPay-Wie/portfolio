@@ -1,4 +1,4 @@
-/* GENERAL */
+                        /* General styles */
 
 @font-face{
     font-family: poppinsBold;
@@ -94,8 +94,11 @@ a{
 
 p{
     margin-top: 0px;
+    color: #141414;
 
 }
+
+                    /*Here starts each section specific styles*/
 
 /* NAVIGATION BAR */
 
@@ -154,7 +157,7 @@ li{
     justify-content: center;
     align-items: center;
     margin-top: 5%;
-    margin-left: 30px;
+    margin-left: 2%;
 }
 
 .who-im-i{
@@ -180,13 +183,12 @@ li{
     border-radius: 30px;
 }
 
-/* SKILLS and PROJECT COMMON DIVs */
+/* SKILLS and PROJECT COMMON ELEMENTS */
 
 .header-title{
     display: flex;
     flex-direction: row;
-    margin: -1rem 15rem;
-    align-self: flex-start;
+    margin: 0 15rem;
 }
 
 .title-p{
@@ -195,15 +197,7 @@ li{
     margin-left: -1rem;
 }
 
-.grid{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0px;
-}
-
-/* SKILLS SECTION */
-
-.skills{
+.skills-project-section{
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
@@ -211,15 +205,7 @@ li{
     align-items: center;
 }
 
-.skills-grid{
-    justify-content: center;
-    width: 80%;
-    margin-top: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
-.skill-box{
+.skills-project-box{
     color: #2e2e31;
     font-family: poppinsBold;
     background-color: white;
@@ -230,6 +216,18 @@ li{
     padding: 30px;
     text-align: center;
 }
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/* SKILLS SECTION */
 
 .colored{
     font-size: 4.71em;
@@ -262,16 +260,22 @@ blockquote p{
     margin-block-start: 0px;
     margin-block-end: 0px;
     margin: 20px 100px;
+    color: whitesmoke
 }
 
 .ijeoma-content{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: flex-end;
     height: 25%;
-    width: 80%;
+    width: 90%;
     margin-right: 50px;
     margin-bottom: 60px;
     margin-top: -15px;
+}
+
+.ijeoma-pic-container{
+    height: 150px;
 }
 
 .ijeoma-pic{
@@ -284,15 +288,23 @@ blockquote p{
 
 .ijeoma-name{
     align-self: flex-end;
-    font-size: 50px;
+    font-size: 60px;
     font-family: remachine;
     letter-spacing: 2px;
 }
 
 /* PROJECTS SECTION */
 
-.projects{
-    background-color: #F2F2F2;
+.project-box{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.project-pic{
+    height: 100px;
+    margin-bottom: 2rem;
 }
 
 /* CONTACT ME SECTION */
@@ -328,14 +340,21 @@ blockquote p{
 .icons-contact{
     display: flex;
     flex-direction: column;
-
+    align-items: flex-start;
+    margin-top: 1rem;
 }
+
 .icons2, .info-icons{
     color: #1A1A2E;
+    margin: .8rem 0;
+}
+
+.icons2{
+    font-size: 1.5rem;
 }
 
 .info-icons{
-    margin-left: -10px;
+    margin-left: .1rem;
 }
 
 /* FOOTER */
@@ -345,7 +364,7 @@ footer{
     flex-direction: column;
     align-items: center;
     background-color: #1A1A2E;
-    width: 100%
+    width: 100%;
 }
 
 .ul-footer{
@@ -360,7 +379,7 @@ footer{
     margin: 20px;
 }
 
-.fa-whatsapp, .fa-envelope, .devicon-github-original, .devicon-linkedin-plain{
+.fa-envelope, .devicon-github-original, .devicon-linkedin-plain{
     margin: 0px 20px;
 }
 
