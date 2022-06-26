@@ -51,22 +51,19 @@ a{
     align-items: center;
 }
 
-
 li a{
     text-align: center;
 }
-
-
 
 p{
     margin-top: 0px;
     color: #141414;
 }
 
-
 /* TITLES */
 
 .title1{
+    font-size: 4.5vh;
     color: #080808;
     font-family: poppinsSemiBold;
     letter-spacing: 0.1em;
@@ -74,7 +71,7 @@ p{
 
 .title2{
     color: #141414;
-    font-size: 2.5rem;
+    font-size: 8vh;
     font-family: poppinsBold;
     margin-block-start: 0rem;
     margin-block-end: 0.2rem;
@@ -91,7 +88,6 @@ p{
         text-align: center;
     }
 }
-
 
 /* SECTION */ 
 
@@ -129,15 +125,14 @@ p{
 /* PICTURES */
 
 .main-pic{
-    max-width: 450px;
-    min-width: 300px; 
+    max-width: 90%;
+    min-width: 50%; 
 }
 
-@media (max-width: 653px){
+@media (max-width: 841px){
     .main-pic{
-        width: 80%;
+        max-width: 80%;
         margin-top: 1.5rem;
-        margin-left: 1.5rem;
         align-self: center;
         justify-content: center;
 }
@@ -180,6 +175,11 @@ li{
     font-family: poppinsLight;
 }
 
+li a:hover{
+    color: #E94560;
+    text-shadow: rgba(255, 211, 232, 0.2) 3px 3px 25px, rgba(255, 203, 251, 0.4) 3px 3px 25px;
+} 
+
 .flag-container{
     display: flex;
     flex-direction: row;
@@ -194,16 +194,20 @@ li{
     border-radius: 30px;
 }
 
+.flag:hover{
+    box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
+}
 
 /* FIRST BLOCK: about me */
 
 .myself{
-    height: 650px;
+    height: 120vh;
+    display: flex,
 }
 
 @media(max-width: 841px){
     .myself{
-        height: 800px;
+        height: 135vh;
     }
 }
 
@@ -231,6 +235,11 @@ li{
     flex-direction: column;
 }
 
+figure{
+    display: flex;
+    justify-content: center;
+}
+
 .my-name{
     color: #16213E;
     font-size: 9.5vh;
@@ -242,7 +251,7 @@ li{
 
 @media (max-width: 841px){
     .my-name{
-    font-size: 4.5vh;
+    font-size: 6vh;
 }
 }
 
@@ -253,6 +262,10 @@ li{
     width: 120px; 
     padding: 10px 30px;
     border-radius: 30px;
+}
+
+.button:hover{
+    box-shadow: rgba(22, 33, 62, .2) 0px 5px 15px 0px;
 }
 
 @media(max-width: 841px){
@@ -287,6 +300,16 @@ li{
     background-color: #F2F2F2;
 }
 
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
 .skills-project-box{
     color: #2e2e31;
     font-family: poppinsBold;
@@ -297,16 +320,12 @@ li{
     margin: 20px;
     padding: 30px;
     text-align: center;
+    cursor: pointer;
 }
 
-.grid{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 80%;
-    margin-top: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
+.skills-project-box:hover{
+    border: 1px solid #ff86eb;
+    color: #ea6a7f;
 }
 
 /* SKILLS SECTION */
@@ -368,8 +387,8 @@ blockquote p{
     flex-direction: row;
     justify-content: flex-end;
     height: 25%;
-    width: 90%;
-    margin: -15px 50px 60px auto;
+    width: 100%;
+    margin: -15px 0 60px auto;
 }
 
 @media(max-width: 680px){
@@ -381,7 +400,7 @@ blockquote p{
 }
 
 .ijeoma-pic-container{
-    height: 150px;
+    height: 25vh;
 }
 
 @media(max-width: 687px){
@@ -393,16 +412,16 @@ blockquote p{
 .ijeoma-pic{
     max-width: 100%;
     max-height: 100%;
-    display: block;
     border-radius: 30px;
     box-sizing: border-box;
 }
 
 .ijeoma-name{
     align-self: flex-end;
-    font-size: 60px;
+    font-size: 9vh;
     font-family: remachine;
     letter-spacing: 2px;
+    margin-right: 20px;
 }
 
 @media(max-width: 689px){
@@ -429,12 +448,16 @@ blockquote p{
 
 .contact{
     display: flex;
-    height: 700px;
+    height: 120vh;
     width: 100%;   
 }
 
+/*@media (max-width: 841px){
+
+}*/
+
 .contact-window{
-    height: 500px;
+    height: 100vh;
     width: 80%;
     border-radius: 30px;
     border: solid #CCCCCC 1px;
@@ -456,19 +479,30 @@ blockquote p{
 }
 
 .icons-contact{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 1rem;
 }
 
-.icons2, .info-icons{
+.contact-info{
     color: #1A1A2E;
-    margin: .8rem 0;
+    margin: 5px 0;
 }
 
+.contact-info:hover{
+    color: #E94560;
+}
+
+/*.icons2:hover{
+    background-color: #0F3460;
+    padding: 15px;
+    border-radius: 30px;
+}*/
+
 .icons2{
-    font-size: 1.5rem;
+    font-size: 25px;
 }
 
 .info-icons{
@@ -486,32 +520,36 @@ footer{
 }
 
 .ul-footer{
-    font-size: 14px;
-    margin-top: 50px;
+    font-size: 2vh;
+    margin-top: 2vh;
 }
 
 .icons-footer{
-    font-size: 30px;
+    font-size: 5vh;
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    margin: 1.5vw;
+}
+
+.icons-footer a:hover{
+    color: #E94560;
 }
 
 .fa-envelope, .devicon-github-original, .devicon-linkedin-plain{
-    margin: 0px 20px;
+    margin: 0px 1.5vw;
 }
 
 strong{
     font-family: remachine;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 5vh;
 }
 
 .made-with{
     color: white;
-    font-size: 15px;
-    margin-right: 25px;
-    margin-bottom: 10px;
+    font-size: 2.5vh;
+    margin-right: 2vw;
+    margin-bottom: .5vw;
     align-self: flex-end;
 }
 
