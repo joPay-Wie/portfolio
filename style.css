@@ -79,7 +79,7 @@ p{
 
 @media (max-width: 841px){
     .title2{
-    font-size: 4.5vh;
+    font-size: 6vh;
 }
 }
 
@@ -97,8 +97,8 @@ p{
     justify-content: center;
     align-content: center;
     align-items: center;
-    height: 150vh;
-
+    height: 900px;
+    width: 100%;
     box-shadow: rgba(15, 52, 96, 0.5) -25px 0px 25px -25px inset;
     background-color: rgb(214, 214, 214);
 }
@@ -131,7 +131,7 @@ p{
 
 @media (max-width: 841px){
     .main-pic{
-        max-width: 80%;
+        max-width: 85%;
         margin-top: 1.5rem;
         align-self: center;
         justify-content: center;
@@ -201,20 +201,20 @@ li a:hover{
 /* FIRST BLOCK: about me */
 
 .myself{
-    height: 120vh;
+    height: 650px;
     display: flex,
 }
 
 @media(max-width: 841px){
     .myself{
-        height: 135vh;
+        height: 155vh;
     }
 }
 
 .myself-window{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    width: 90%;
     align-items: center;
     margin-top: 5%;
     margin-left: 2%;
@@ -233,6 +233,12 @@ li a:hover{
 .who-im-i{
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 841px){
+    .who-im-i{
+    margin-left: 2%;
+}
 }
 
 figure{
@@ -296,6 +302,13 @@ figure{
     margin-left: -1rem;
 }
 
+@media(max-width: 841px){
+    .title-p{
+        text-align: center;
+        margin-left: -2rem;
+    }
+}
+
 .skills-project-section{
     background-color: #F2F2F2;
 }
@@ -340,7 +353,7 @@ figure{
 /* QUOTE SECTION */
 
 .quote{
-    height: 550px;
+    height: 600px;
     background-color: #E94560;
     margin: 0px;
     color: whitesmoke;
@@ -400,25 +413,28 @@ blockquote p{
 }
 
 .ijeoma-pic-container{
-    height: 25vh;
+    height: 100%;
 }
 
-@media(max-width: 687px){
+/*@media(max-width: 687px){
     .ijeoma-pic-container{
-        height: 200px;
+        height: 150%;
     }
-}
+}*/
 
 .ijeoma-pic{
+    width: 100%;
     max-width: 100%;
     max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     border-radius: 30px;
     box-sizing: border-box;
 }
 
 .ijeoma-name{
     align-self: flex-end;
-    font-size: 9vh;
+    font-size: 4em;
     font-family: remachine;
     letter-spacing: 2px;
     margin-right: 20px;
@@ -427,6 +443,7 @@ blockquote p{
 @media(max-width: 689px){
     .ijeoma-name{
         align-self: center;
+        font-size: 2em;
     }
 }
 
@@ -448,7 +465,7 @@ blockquote p{
 
 .contact{
     display: flex;
-    height: 120vh;
+    height: 750px;
     width: 100%;   
 }
 
@@ -457,7 +474,7 @@ blockquote p{
 }*/
 
 .contact-window{
-    height: 100vh;
+    height: 500px;
     width: 80%;
     border-radius: 30px;
     border: solid #CCCCCC 1px;
@@ -512,11 +529,13 @@ blockquote p{
 /* FOOTER */
 
 footer{
+    width: 100%;
+    height: 175px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     background-color: #1A1A2E;
-    width: 100%;
 }
 
 .ul-footer{
@@ -528,27 +547,38 @@ footer{
     font-size: 5vh;
     display: flex;
     flex-direction: row;
-    margin: 1.5vw;
 }
 
-.icons-footer a:hover{
-    color: #E94560;
-}
+/*.icons-footer a{
+    width: 5vh;
+    margin: 5px 15px;
+}*/
 
-.fa-envelope, .devicon-github-original, .devicon-linkedin-plain{
+.foot-icon{
+    color: #1A1A2E;
     margin: 0px 1.5vw;
+    border: 1px solid rgb(214, 214, 214);
+    background-color: rgb(214, 214, 214);
+    border-radius: 30px;
+    padding: 7px;
+}
+
+.foot-icon:hover{
+    color: rgb(214, 214, 214);
+    border: 1px solid rgb(214, 214, 214);
+    background-color: #1A1A2E; 
 }
 
 strong{
     font-family: remachine;
     font-weight: 300;
-    font-size: 5vh;
+    font-size: 30px;
 }
 
-.made-with{
+.build-with{
     color: white;
-    font-size: 2.5vh;
-    margin-right: 2vw;
+    font-size: 15px;
+    margin-right: 1.5vw;
     margin-bottom: .5vw;
     align-self: flex-end;
 }
