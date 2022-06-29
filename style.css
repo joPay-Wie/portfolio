@@ -35,7 +35,7 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
-    background-color: #dee1e7; 
+    background-color: rgb(214, 214, 214); 
     height: 100%;
     font-family: poppinsMedium;
 }
@@ -75,7 +75,7 @@ address{
     margin-block-end: 0;
 }
 
-@media (max-width: 840px){
+@media (max-width: 850px){
     .title1{
         font-size: 2rem;
         margin-bottom: 1rem;
@@ -90,19 +90,11 @@ address{
     margin-block-end: 0.2rem;
 }
 
-@media (max-width: 840px){
+@media (max-width: 850px){
     .title2{
-        font-size: 6vh;
         text-align: center;
     }
 }
-
-/*@media (max-width: 755px) and (min-width:250px){
-    .title2{
-        
-    }
-}*/
-
 /* SECTION */ 
 
 .section{
@@ -119,43 +111,22 @@ address{
 
 /*Responsive*/
 
-@media (max-width: 1148px) and (min-width: 1005px){
+@media (max-width: 1081px) and (min-width: 1005px){
     .section{
         height: 1250px;
     }
 }
 
-@media (max-width: 1005px) and (min-width:710px){
+@media (max-width: 1005px) and (min-width:728px){
     .section{
         height: 1400px;
     }
 }
 
-@media (max-width: 710px) and (min-width:100px){
+@media (max-width: 728px) and (min-width:100px){
     .section{
         height: 2000px;
     }
-}
-
-/* PICTURES */
-
-.main-pic{
-    max-width: 90%;
-    min-width: 75%;
-    margin-left: 10%;
-}
-
-@media (max-width: 850px){
-    .main-pic{
-        max-width: 60%;
-        min-width: 60%;
-        margin-top: 1.5rem;
-}
-}
-
-.little-pic{
-    max-width: 300px;
-    min-width: 150px;
 }
 
                     /*Here starts each section specific styles*/
@@ -168,11 +139,11 @@ header{
 }
 
 .header-navbar{
+    height: 8rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    height: 8rem;
     background-color: #16213E;
     box-shadow: rgba(22, 33, 62, 0.4) 0px 7px 29px 0px;
 }
@@ -199,7 +170,6 @@ li{
 
 li a:hover{
     color: #E94560;
-    text-shadow: rgba(255, 211, 232, 0.1) 3px 3px 25px, rgba(255, 203, 251, 0.2) 3px 3px 25px;
 } 
 
 .flag-container{
@@ -216,6 +186,13 @@ li a:hover{
     border-radius: 30px;
 }
 
+@media (max-width: 850px){
+    .flag{
+        margin-left: .5rem;
+        margin-right: 1rem;
+    }
+}
+
 .flag:hover{
     box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
 }
@@ -224,10 +201,9 @@ li a:hover{
 
 .myself{
     height: 650px;
-    display: flex,
 }
 
-/*Responsive*/
+/*Responsive myself section*/
 @media(max-width: 850px) and (min-width:500px){
     .myself{
         height: 150vh;
@@ -240,30 +216,79 @@ li a:hover{
     }
 }
 
-/* Mobile */
 @media(max-height: 1180px){
     .myself{
-        height: 90vh;
+        height: 100vh;
     }
 }
 
 .myself-window{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 90%;
     align-items: center;
     margin-top: 5%;
     margin-left: 2%;
 }
 
+/* Responsive myself window */
+
 @media (max-width: 850px){
     .myself-window{
     flex-direction: column;
     align-items: center;
-    margin-bottom: 25%;
-    margin-top: 25%;
-
+    margin-bottom: 15%;
+    margin-top: 15%;
 }
+}
+
+.myself-window figure{
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+}
+
+.main-pic{
+    max-width: 90%;
+    min-width: 75%;
+    margin-left: 10%;
+}
+
+/* Responsive main pic */
+
+@media (max-width: 850px){
+    .main-pic{
+        max-width: 75%;
+        min-width: 60%;
+        margin-top: 3rem;
+}
+}
+
+@media (max-width: 550px){
+    .main-pic{
+        max-width: 70%;
+        min-width: 75%;
+        margin-top: 5rem;
+    }
+}
+
+/* Language flags for mobile gadgets */
+
+.flag-mobile{
+    justify-content: flex-start;
+    background-color: transparent;
+    height: 2rem;
+    width: 100%;
+    align-self: flex-start;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 850px) {
+    .flag-mobile{
+        display: none;
+    }
 }
 
 .who-im-i{
@@ -354,6 +379,11 @@ figure{
 
 .skills-project-section{
     background-color: #F2F2F2;
+}
+
+.little-pic{
+    max-width: 300px;
+    min-width: 150px;
 }
 
 .grid{
@@ -569,7 +599,7 @@ blockquote p{
     border-radius: 30px;
 }*/
 
-.icons2{
+.icons{
     font-size: 25px;
 }
 
@@ -581,17 +611,21 @@ blockquote p{
 
 footer{
     width: 100%;
-    height: 100%;
+    height: 15rem;
+    min-height: 100%;
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     background-color: #1A1A2E;
+    border: solid #1A1A2E;
 }
 
-.ul-footer{
-    font-size: 2vh;
-    margin-top: 2vh;
+@media (max-width: 450px){
+    .ul-footer a{
+    font-size: 2.8vw;
+}
 }
 
 .icons-footer{
