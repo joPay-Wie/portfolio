@@ -626,6 +626,38 @@ blockquote p{
     margin-left: .7rem;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+label{
+    font-size: 1rem;
+    letter-spacing: .1em;
+    margin-bottom: .2em;
+}
+
+input, textarea{
+    margin-bottom: 1em;
+    font-family: poppinsBold;
+    color: #0F3460;
+    background-color: #ffd7f8;
+    border:rgba(22, 33, 62) solid 1px;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    border: none;
+    margin: 0;
+}
+
+form .button{
+    width: 50%;
+    align-self: center;
+}
+
+
 /* FOOTER */
 
 footer{
