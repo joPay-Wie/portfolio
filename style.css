@@ -135,6 +135,7 @@ address{
 
 header{
     position: fixed;
+    z-index: 3;
     width: 100%;
 }
 
@@ -468,10 +469,6 @@ li a:hover{
     align-self: center; 
 }
 
-blockquote{
-    font-size: 1.2rem;
-}
-
 blockquote p{
     font-size: 25px;
     margin-block-start: 0px;
@@ -535,6 +532,7 @@ blockquote p{
     font-family: remachine;
     letter-spacing: 2px;
     margin-right: 5%;
+    margin-left: 2%;
 }
 
 @media(max-width: 425px){
@@ -588,15 +586,20 @@ blockquote p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 50%;
+    width: 50%;
+}
+
+.icons-nd-logo{
+    display: flex;
+    height: 50%;
 }
 
 .icons-contact{
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 1rem;
+    margin-left: 2rem;
+    z-index: 2;
 }
 
 .contact-info{
@@ -626,6 +629,19 @@ blockquote p{
     margin-left: .7rem;
 }
 
+.icons-nd-logo figure{
+    margin: 0;
+    display: flex;
+}
+
+.logo{
+    max-width: 100px;
+    min-width: 150px;
+    align-self: flex-end;
+}
+
+/* FORM */
+
 form{
     display: flex;
     flex-direction: column;
@@ -640,7 +656,7 @@ label{
 
 input, textarea{
     margin-bottom: 1em;
-    font-family: poppinsBold;
+    font-family: poppinsLight;
     color: #0F3460;
     background-color: #ffd7f8;
     border:rgba(22, 33, 62) solid 1px;
@@ -650,11 +666,13 @@ input, textarea{
 input[type=submit]{
     border: none;
     margin: 0;
+    font-family: poppinsSemiBold;
 }
 
 form .button{
     width: 50%;
     align-self: center;
+    cursor: pointer;
 }
 
 
