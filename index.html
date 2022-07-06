@@ -15,6 +15,9 @@
 <!-- HEADER -->
     <header>
         <nav class="header-navbar">
+            <figure>
+                <img src="assets/images/logo-header.svg" alt="logo" height=85px>
+            </figure>
             <ul class="ul-navbar">
                 <li> <a href="#hello"> ABOUT ME </a> </li>
                 <li> <a href="#my-skills"> SKILLS </a> </li>
@@ -22,7 +25,7 @@
                 <li> <a href="#contact-me"> CONTACT ME </a> </li>
                 <div class="flag-container">
                     <a href="index.html"> <img src="assets/images/flags/gb.svg" alt="English" height=25px class="flag"> </a>
-                    <a href="spanish.html"> <img src="assets/images/flags/es.svg" alt="Castellano" height=25px class="flag"> </a>
+                    <a href="spanish.html"> <img src="assets/images/flags/es.svg" alt="Español" height=25px class="flag"> </a>
                 </div>
             </ul>
         </nav>
@@ -219,25 +222,25 @@
                 <div class="contact-container">
                     <h2 class="title2"> Escribime </h2>
                     <form action="" method="GET">
-                        <label for="name">
+                        <label for="name-form">
                             Name
                         </label>
-                        <input type="text" name="name" placeholder="Josephine" required>
+                        <input type="text" name="name" id="name-form" placeholder="Josephine" required>
                         
-                        <label for="last-name">
+                        <label for="last-name-form">
                             Last name
                         </label>
-                        <input type="text" name="last-name" placeholder="Payer" required>
+                        <input type="text" name="last-name" id="last-name-form" placeholder="Payer" required>
                         
-                        <label for="mail">
+                        <label for="email-form">
                             Email
                         </label>
-                        <input type="email" name="mail" placeholder="dev.josephine.payer@gmail.com" required>
+                        <input type="email" name="mail" id="email-form" placeholder="dev.josephine.payer@gmail.com" required>
                         
-                        <label>
+                        <label for="message-form">
                             Message
                         </label>
-                        <textarea cols="30" rows="7" placeholder="Hello! My name is..." required></textarea>
+                        <textarea cols="30" rows="7" id="message-form" placeholder="Hello! My name is..." required></textarea>
 
                         <input type="submit" value="Submit"  class="button">
                     </form>
