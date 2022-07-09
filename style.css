@@ -48,6 +48,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: border-radius;
+    transition-duration: .1s;
 }
 
 li a{
@@ -112,8 +114,6 @@ address{
     box-shadow: rgba(15, 52, 96, 0.5) -25px 0px 25px -25px inset;
     background-color: rgb(214, 214, 214);
 }
-
-/*Responsive*/
 
 @media (max-width: 1081px) and (min-width: 1005px){
     .section{
@@ -185,6 +185,13 @@ li a:hover{
     color: #E94560;
 } 
 
+li a:active{
+    background: rgba(255, 215, 248, 1);
+    box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
+    border-radius: 30px;
+}
+
+
 .flag-container{
     display: flex;
     flex-direction: row;
@@ -229,11 +236,11 @@ li a:hover{
     }
 }
 
-@media(max-height: 1180px){
+/*@media(max-height: 1180px){
     .myself{
         height: 100vh;
     }
-}
+}*/
 
 .myself-window{
     display: flex;
@@ -357,6 +364,9 @@ li a:hover{
     box-shadow: rgba(22, 33, 62, .2) 0px 5px 15px 0px;
 }
 
+.button:active{
+    box-shadow: rgba(0, 0, 0, .2) 0px -50px 36px -28px inset;
+} 
 @media(max-width: 850px){
     .button{
         width: 100px;
@@ -405,6 +415,12 @@ li a:hover{
 .little-pic{
     max-width: 300px;
     min-width: 150px;
+    transition-property: transform;
+    transition-duration: .5s;
+}
+
+.little-pic:hover{
+    transform: translateY(-10%);
 }
 
 .grid{
@@ -428,11 +444,16 @@ li a:hover{
     padding: 30px;
     text-align: center;
     cursor: pointer;
+    transition-property: transform;
+    transition-duration: .5s;
+
 }
 
 .skills-project-box:hover{
     border: 1px solid #ff86eb;
     color: #ea6a7f;
+    transform: scale(120%);
+    box-shadow: rgba(25, 60, 77, 0.4) 0px 25px 20px -20px;
 }
 
 .skills-project-box span{
@@ -599,11 +620,11 @@ blockquote p{
 
 @media (max-width: 836px) and (min-width:250px){
     .contact {
-        height: 1200px;
+        height: 1100px;
     }
 
     .contact-window {
-        height: 950px;
+        height: 850px;
         width: 75%;
     }
 
@@ -623,7 +644,7 @@ blockquote p{
 
 @media (max-width: 710px){
     .contact-window{
-        height: 1150px;
+        height: 1100px;
     }
 
     .contact-container{
@@ -641,8 +662,14 @@ blockquote p{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 2rem;
     z-index: 2;
+    margin-top: 18%;
+}
+
+@media (max-width: 830px){
+    .icons-contact{
+        margin-top: 0;
+    }
 }
 
 .contact-info{
@@ -651,7 +678,7 @@ blockquote p{
 }
 
 .contact-info span{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 450px){
@@ -664,14 +691,10 @@ blockquote p{
     color: #E94560;
 }
 
-/*.icons2:hover{
-    background-color: #0F3460;
-    padding: 15px;
-    border-radius: 30px;
-}*/
-
 .icons{
-    font-size: 25px;
+    font-size: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 .info-icons{
@@ -689,7 +712,7 @@ blockquote p{
     align-self: flex-end;
 }
 
-@media (min-width: 850px){
+@media (min-width: 830px){
     .logo{
         display: none;
     }
@@ -705,23 +728,21 @@ blockquote p{
         flex-direction: row;
         justify-content: center;
     }
-
-    .logo{
-        max-width: 45px;
-        min-width: 50px;
-    }
 }
 
 @media (max-width: 715px) {
-    .icons-nd-logo {
+    .icons-nd-logo{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+}
 
-    .logo{
-        max-width: 65px;
-        min-width: 50px;
+@media (max-width: 330px){
+    i.icons{
+        font-size: 1.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
 
@@ -733,7 +754,7 @@ form{
     width: 80%;
 }
 
-@media (max-width: 836px) and (min-width:350px){
+@media (max-width: 836px) and (min-width:250px){
     form{
         width: 100%;
     }
@@ -793,7 +814,6 @@ footer{
     font-size: 5vh;
     display: flex;
     flex-direction: row;
-
 }
 
 /*.icons-footer a{
