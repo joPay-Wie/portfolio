@@ -1,5 +1,5 @@
-                        /* General styles */
-
+/* General styles */
+/* Fonts */
 @font-face{
     font-family: poppinsBold;
     src: url(assets/Poppins-Bold.ttf);
@@ -25,6 +25,8 @@
     src: url(assets/RemachineScript_Personal_Use.ttf);
 }
 
+/* Universal styles */
+
 html, body{
     margin: 0;
     font-size: 75%;
@@ -48,8 +50,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-property: border-radius;
-    transition-duration: .1s;
+    font-size: 1.3rem;
 }
 
 li a{
@@ -70,37 +71,6 @@ address{
     font-style: normal;
 }
 
-/* TITLES */
-
-.title1{
-    font-size: 3rem;
-    color: #080808;
-    font-family: poppinsSemiBold;
-    letter-spacing: 0.1em;
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-@media (max-width: 850px){
-    .title1{
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-}
-
-.title2{
-    color: #141414;
-    font-size: 6vh;
-    font-family: poppinsBold;
-    margin-block-start: 0rem;
-    margin-block-end: 0.2rem;
-}
-
-@media (max-width: 850px){
-    .title2{
-        text-align: center;
-    }
-}
 /* SECTION */ 
 
 .section{
@@ -113,6 +83,7 @@ address{
     width: 100%;
     box-shadow: rgba(15, 52, 96, 0.5) -25px 0px 25px -25px inset;
     background-color: rgb(214, 214, 214);
+    z-index: 3;
 }
 
 @media (max-width: 1081px) and (min-width: 1005px){
@@ -133,13 +104,13 @@ address{
     }
 }
 
-                    /*Here starts each section specific styles*/
+/*Here starts each section specific styles*/
 
 /* NAVIGATION BAR */
 
 header{
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     width: 100%;
 }
 
@@ -148,17 +119,17 @@ header{
 }
 
 .header-navbar figure img{
-    margin-left: -30%;
+    margin-left: -43%;
 }
 
 .header-navbar{
-    height: 8rem;
+    height: 7.2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #16213E;
-    box-shadow: rgba(22, 33, 62, 0.4) 0px 7px 29px 0px;
+    box-shadow: rgba(22, 33, 62, 0.2) 0px 7px 29px 0px;
 }
 
 @media(max-width: 850px){
@@ -175,7 +146,7 @@ header{
 }
 
 li{
-    font-size: 1.3rem;
+    padding: 0 .7rem;
     margin: auto 2rem;
     letter-spacing: 2px;
     font-family: poppinsLight;
@@ -185,10 +156,15 @@ li a:hover{
     color: #E94560;
 } 
 
-li a:active{
+li:active{
     background: rgba(255, 215, 248, 1);
     box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
     border-radius: 30px;
+    letter-spacing: 1.59px;    
+}
+
+li a:active{
+    font-family: poppinsSemiBold;
 }
 
 
@@ -217,45 +193,64 @@ li a:active{
     box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
 }
 
-/* FIRST BLOCK: about me */
+/* HERO */
 
-.myself{
+.hero{
     height: 650px;
+    position: relative;
+    background: #0a0a0a;
 }
 
-/*Responsive myself section*/
+.hero:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.3;
+    background-image: url(assets/images/web-development.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+/*Responsive hero section*/
 @media(max-width: 850px) and (min-width:500px){
-    .myself{
-        height: 150vh;
+    .hero{
+        height: 90vh;
     }
 }
 
 @media(max-width: 500px) and (min-width:250px){
-    .myself{
+    .hero{
         height: 140vh;
     }
 }
 
-/*@media(max-height: 1180px){
-    .myself{
+@media(max-height: 1179px){
+    .hero{
         height: 100vh;
     }
-}*/
+}
 
-.myself-window{
+.hero-window{
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 90%;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 7%;
     margin-left: 2%;
+    z-index: 2;
 }
 
-/* Responsive myself window */
+/* Responsive hero window */
 
 @media (max-width: 850px){
-    .myself-window{
+    .hero-window{
     flex-direction: column;
     align-items: center;
     margin-bottom: 15%;
@@ -263,7 +258,9 @@ li a:active{
 }
 }
 
-.myself-window figure{
+.hero-window figure{
+    display: flex;
+    justify-content: center;
     margin-block-end: 0;
     margin-block-start: 0;
     margin-inline-end: 0;
@@ -313,9 +310,12 @@ li a:active{
     }
 }
 
+/* Hero text and button */
+
 .who-im-i{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 @media (max-width: 841px){
@@ -326,20 +326,34 @@ li a:active{
 
 .who-im-i span{
     font-size: 1.3rem;
+    color: whitesmoke;
 }
 
-.myself-window figure{
-    display: flex;
-    justify-content: center;
+.title1{
+    font-size: 3rem;
+    color: #080808;
+    font-family: poppinsSemiBold;
+    letter-spacing: 0.1em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #CCCCCC;
+}
+
+@media (max-width: 850px){
+    .title1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .my-name{
-    color: #16213E;
+    color: #13427c;
     font-size: 5rem;
     font-family: poppinsBold;
     margin-block-start: 0px;
     margin-block-end: 0px;
     margin-top: -30px;
+    
 }
 
 @media (max-width: 850px){
@@ -376,6 +390,20 @@ li a:active{
 }
 
 /* SKILLS and PROJECT COMMON ELEMENTS */
+
+.title2{
+    color: #141414;
+    font-size: 6vh;
+    font-family: poppinsBold;
+    margin-block-start: 0rem;
+    margin-block-end: 0.2rem;
+}
+
+@media (max-width: 850px){
+    .title2{
+        text-align: center;
+    }
+}
 
 .header-title{
     display: flex;
@@ -428,9 +456,7 @@ li a:active{
     flex-wrap: wrap;
     justify-content: center;
     width: 85%;
-    margin-top: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 20px 50px 0 60px;
 }
 
 .skills-project-box{
@@ -446,7 +472,6 @@ li a:active{
     cursor: pointer;
     transition-property: transform;
     transition-duration: .5s;
-
 }
 
 .skills-project-box:hover{
@@ -529,9 +554,7 @@ blockquote p{
 @media(max-width: 680px){
     .autor-content{
        height: 25%;
-       margin-right: 0px;
-       margin-left: 30px;
-       margin-top: 15px;
+       margin: 15px 0px 0px 30px;
     }
 }
 
@@ -735,6 +758,7 @@ blockquote p{
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-bottom: 2px solid rgba(26, 26, 46, 0.3);
     }
 }
 
@@ -756,7 +780,7 @@ form{
 
 @media (max-width: 836px) and (min-width:250px){
     form{
-        width: 100%;
+        width: 120%;
     }
 }
 
@@ -816,12 +840,9 @@ footer{
     flex-direction: row;
 }
 
-/*.icons-footer a{
-    width: 5vh;
-    margin: 5px 15px;
-}*/
 
 .foot-icon{
+    font-size: 2.2rem;
     color: #1A1A2E;
     margin: 0px 1.5vw;
     border: 1px solid rgb(214, 214, 214);
