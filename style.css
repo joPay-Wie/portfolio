@@ -210,8 +210,8 @@ li a:active{
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.3;
-    background-image: url(assets/images/web-development.png);
+    opacity: .5;
+    background-image: url(assets/images/web-development3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -227,6 +227,10 @@ li a:active{
 @media(max-width: 500px) and (min-width:250px){
     .hero{
         height: 140vh;
+    }
+
+    .hero:before{
+        background-position-x: center;
     }
 }
 
@@ -259,6 +263,7 @@ li a:active{
 }
 
 .hero-window figure{
+    width: 50%;
     display: flex;
     justify-content: center;
     margin-block-end: 0;
@@ -268,17 +273,21 @@ li a:active{
 }
 
 .main-pic{
-    max-width: 90%;
+    max-width: 100%;
     min-width: 75%;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 /* Responsive main pic */
 
 @media (max-width: 850px){
+    .hero-window figure{
+        width: 80%;
+    }
+
     .main-pic{
-        max-width: 75%;
-        min-width: 60%;
+        max-width: 80%;
+        min-width: 70%;
         margin-top: 3rem;
         margin-left: 0;
 }
@@ -347,13 +356,14 @@ li a:active{
 }
 
 .my-name{
-    color: #13427c;
+    color: #ea6a7f;
     font-size: 5rem;
     font-family: poppinsBold;
     margin-block-start: 0px;
     margin-block-end: 0px;
-    margin-top: -30px;
-    
+    margin-top: -25px;
+/*text-shadow: 0 0 .5px rgb(209, 209, 209, 1), 0 0 1px rgb(209, 209, 209, 1), 0 0 4px rgb(209, 209, 209, 1), 0 0 6px rgb(209, 209, 209, 1);
+/*#ed76b1, 0 0 10px #e60073*/
 }
 
 @media (max-width: 850px){
