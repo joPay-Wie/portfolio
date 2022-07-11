@@ -839,9 +839,11 @@ footer{
 }
 
 @media (max-width: 450px){
+    .ul-footer li{
+        padding: 0;
+    }
     .ul-footer a{
-    font-size: 2.8vw;
-    margin: 0 5%;
+        font-size: 2.8vw;
 }
 }
 
