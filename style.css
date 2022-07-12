@@ -242,7 +242,7 @@ li a:active{
 
 @media(max-height: 1179px){
     .hero{
-        height: 95vh;
+        height: 100vh;
     }
 }
 
@@ -480,7 +480,6 @@ li a:active{
 }
 
 .skills-project-box{
-    color: #2e2e31;
     font-family: poppinsBold;
     background-color: white;
     border: 1px solid #CCCCCC;
@@ -496,7 +495,6 @@ li a:active{
 
 .skills-project-box:hover{
     border: 1px solid #ff86eb;
-    color: #ea6a7f;
     transform: scale(120%);
     box-shadow: rgba(25, 60, 77, 0.4) 0px 25px 20px -20px;
 }
@@ -505,10 +503,19 @@ li a:active{
     font-size: 1.2rem;
 }
 
+.skills-project-box a{
+    color: #2e2e31;
+    display: block;
+}
+
+.skills-project-box a:hover{
+    color: #ea6a7f;
+}
+
 /* SKILLS SECTION */
 
 .colored{
-    font-size: 8em;
+    font-size: 4.5em;
     margin-top: 24px;
     margin-bottom: 20px;
     display: block;
@@ -625,7 +632,7 @@ blockquote p{
 
 /* PROJECTS SECTION */
 
-.project-box{
+.project-box a{
     display: flex;
     flex-direction: column;
     align-content: center;
