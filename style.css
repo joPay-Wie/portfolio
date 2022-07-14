@@ -168,6 +168,11 @@ li a:active{
     font-family: poppinsSemiBold;
 }
 
+.li-contact{
+    background-color: #604d95;
+    border-radius: 30px;
+}
+
 .flag-container{
     display: flex;
     flex-direction: row;
@@ -510,7 +515,7 @@ li a:active{
     display: block;
 }
 
-.skills-project-box a:hover{
+.skills-project-box:hover a{
     color: #ea6a7f;
 }
 
