@@ -83,11 +83,10 @@ address{
     height: 900px;
     width: 100%;
     box-shadow: rgba(15, 52, 96, 0.5) -25px 0px 25px -25px inset;
-    background-color: rgb(214, 214, 214);
     z-index: 3;
 }
 
-/* section media queries */
+/* Section media queries */
 
 @media (max-width: 1081px) and (min-width: 1005px){
     .section{
@@ -134,11 +133,10 @@ header{
 .header-navbar{
     height: 7.2rem;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #16213E;
-    box-shadow: rgba(22, 33, 62, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(22, 33, 62, 0.3) 0px 7px 29px 0px;
 }
 
 .ul-navbar{
@@ -205,13 +203,13 @@ li a:active{
 
 /********* HERO *********/
 
-.hero{
+#hero{
     height: 650px;
     position: relative;
     background: #0a0a0a;
 }
 
-.hero:before{
+#hero::before{
     content: '';
     display: block;
     position: absolute;
@@ -289,7 +287,7 @@ li a:active{
 }
 
 .hero-text h1:hover{
-    text-shadow: 0 0 .5px rgba(66, 99, 189, .5), 0 0 1px rgba(44, 65, 125, .5), 0 0 4px #0F3460, 0 0 6px #16213E;
+    text-shadow: 0 0 .5px #12011F, 0 0 1px #12011F, 0 0 10px #12011F, 0 0 15px #12011F;
 }
 
 .button{
@@ -315,23 +313,23 @@ li a:active{
 /* Hero media queries */ 
 
 @media(max-width: 850px) and (min-width:500px){
-    .hero{
+    #hero{
         height: 90vh;
     }
 }
 
 @media(max-width: 500px) and (min-width:250px){
-    .hero{
+    #hero{
         height: 140vh;
     }
 
-    .hero:before{
+    #hero::before{
         background-position-x: center;
     }
 }
 
 @media(max-height: 1179px){
-    .hero{
+    #hero{
         height: 100vh;
     }
 }
@@ -383,7 +381,7 @@ li a:active{
 @media (max-width: 841px){ /* Hero paragraph */
     .hero-text{
     margin-left: 2%;
-}
+    }
 }
 
 @media (max-width: 850px){
@@ -406,7 +404,33 @@ li a:active{
 
 /********* SKILLS and PROJECT COMMON ELEMENTS *********/
 
-.title2{
+.skills-project-section{
+    background-color: #F2F2F2;
+}
+
+.header-title{
+    display: flex;
+    margin: 0 15rem;
+}
+
+.header-title:hover .title-p p{
+    transform: translateY(-7%);
+}
+
+.header-title:hover .title-p h1{
+    color: #E94560;
+}
+
+.header-title:hover .title-p h1::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.header-title:hover .little-pic{
+    transform: translateX(8%);
+}
+
+.title-p h1{
     color: #141414;
     font-size: 6vh;
     font-family: poppinsBold;
@@ -416,8 +440,7 @@ li a:active{
     position: relative;
 }
 
-
-.title2::after{
+.title-p h1::after{
     /* for the underline title effect */
     content: '';
     position: absolute;
@@ -431,29 +454,6 @@ li a:active{
     transition: transform 0.25s ease-out;
 }
 
-.header-title{
-    display: flex;
-    flex-direction: row;
-    margin: 0 15rem;
-}
-
-.header-title:hover .title-p p{
-    transform: translateY(-7%);
-}
-
-.header-title:hover .title-p .title2{
-    color: #E94560;
-}
-
-.header-title:hover .title-p .title2::after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.header-title:hover .little-pic{
-    transform: translateX(8%);
-}
-
 .title-p{
     display: flex;
     flex-direction: column;
@@ -464,10 +464,6 @@ li a:active{
     margin-top: 2%;
     transition-property: transform;
     transition-duration: .5s;
-}
-
-.skills-project-section{
-    background-color: #F2F2F2;
 }
 
 .little-pic{
@@ -521,7 +517,7 @@ li a:active{
 /* Skills and Project common media queries */
 
 @media (max-width: 850px){
-    .title2{
+    .title-p h1{
         text-align: center;
     }
 }
@@ -531,7 +527,7 @@ li a:active{
         flex-direction: column;
     }
 
-    .title2::after{
+    .title-p h1::after{
         left: 30%;
         transform-origin: center;
     }
@@ -544,7 +540,7 @@ li a:active{
         transform: translateX(-20%);
     }
 
-    .header-title:hover .title-p .title2::after{
+    .header-title:hover .title-p h1::after{
         transform: scaleX(1);
         transform-origin: bottom left;
     }
@@ -572,7 +568,7 @@ li a:active{
 
 /********* SKILLS SECTION *********/
 
-.colored{ /* language icons */
+.colored{ /* programming languages icons */
     font-size: 4.5em;
     margin-top: 24px;
     margin-bottom: 20px;
@@ -706,19 +702,39 @@ blockquote p{
 
 /********* CONTACT ME SECTION *********/
 
-.contact{
+#contact-me{
     display: flex;
     height: 750px;
-    width: 100%;   
+    width: 100%; 
+    position: relative;
+    background: black;
+    z-index: 1;  
+}
+
+#contact-me::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: .75;
+    background-image: url(assets/images/code2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
 }
 
 .contact-window{
-    height: 500px;
+    height: 80%;
     width: 80%;
     border-radius: 30px;
     border: solid #CCCCCC 1px;
     background-color: #F2F2F2;
     margin: 8rem 8rem;
+    z-index: 3;
 }
 
 .contact-general{
@@ -734,10 +750,9 @@ blockquote p{
     width: 50%;
 }
 
-.icons-nd-logo{
-    display: flex;
-    height: 50%;
-    flex-direction: row;
+.contact-container h2{
+    font-size: 5vh;
+    color: #141414;
 }
 
 .icons-contact{
@@ -754,21 +769,38 @@ blockquote p{
 }
 
 .contact-info span{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
-.contact-info:hover{
+.contact-info:hover address a span{
     color: #E94560;
 }
 
+.contact-info:hover address a .icons{
+    border-radius: 30px;
+    background: #E94560;
+    color:#1D055F; 
+    border: 1px solid rgb(214, 214, 214);
+}
+
 .icons{
-    font-size: 3rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    font-size: 2.2rem;
+    color: #1D055F;
+    margin: 0px 1.2vw;
+    background-color: transparent;
+    border: 1px solid #F2F2F2;
+    border-radius: 30px;
+    padding: 7px;
 }
 
 .info-icons{
     margin-left: .7rem;
+}
+
+.icons-nd-logo{ /* this only appears in responsive */
+    display: flex;
+    height: 50%;
+    flex-direction: row;
 }
 
 .icons-nd-logo figure{
@@ -784,9 +816,9 @@ blockquote p{
 
 /* contact me media queries */
 
-@media (max-width: 836px) and (min-width:250px){
-    .contact {
-        height: 1100px;
+@media(max-width: 836px) and (min-width:250px){
+    #contact-me {
+        height: 1200px;
     }
 
     .contact-window {
@@ -852,7 +884,7 @@ blockquote p{
 }
 
 @media (max-width: 330px){
-    i.icons{
+    i .icons{
         font-size: 1.5rem;
         width: 1.5rem;
         height: 1.5rem;
@@ -883,8 +915,8 @@ input, textarea{
     margin-bottom: 1em;
     font-family: poppinsLight;
     font-size: 1.3rem;
-    color: #0F3460;
-    background-color: #ffd7f8;
+    color: whitesmoke;
+    background-color: #604d95;
     border: none;
     border-radius: 10px;
 }
@@ -893,6 +925,10 @@ input[type=submit]{
     border: none;
     margin: 0;
     font-family: poppinsSemiBold;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #c1b6db;
 }
 
 form .button{
@@ -922,20 +958,18 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #1A1A2E;
-    border: solid #1A1A2E;
+    background-color: #121b32;
+    border: solid #121b32;
 }
 
 .icons-footer{
     font-size: 5vh;
     display: flex;
-    flex-direction: row;
 }
-
 
 .foot-icon{
     font-size: 2.2rem;
-    color: #1A1A2E;
+    color: #121b32;
     margin: 0px 1.5vw;
     border: 1px solid rgb(214, 214, 214);
     background-color: rgb(214, 214, 214);
@@ -950,7 +984,7 @@ footer{
 .foot-icon:hover{
     color: #E94560;
     border: 1px solid rgb(214, 214, 214);
-    background-color: #1A1A2E; 
+    background-color: #121b32; 
 }
 
 strong{
@@ -979,5 +1013,5 @@ strong{
     }
     .ul-footer a{
         font-size: 2.8vw;
-}
+    }
 }
