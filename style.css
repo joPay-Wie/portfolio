@@ -62,6 +62,7 @@ p{
     font-size: 1.5rem;
     margin-top: 0px;
     color: #141414;
+    margin-block-end: 0;
 }
 
 *::selection{
@@ -197,9 +198,6 @@ li a:active{
     .header-navbar{
         display: none;
     }
-}
-
-@media (max-width: 850px){
     .flag{
         margin-left: .5rem;
         margin-right: 1rem;
@@ -288,11 +286,7 @@ li a:active{
     margin-block-end: 0px;
     margin-top: -25px;
     transition-property: text-shadow;
-    transition-duration: .2s;
-}
-
-.hero-text h1:hover{
-    text-shadow: 0 0 .5px #12011F, 0 0 1px #12011F, 0 0 10px #12011F, 0 0 15px #12011F;
+    transition-duration: 1s;
 }
 
 .button{
@@ -339,16 +333,20 @@ li a:active{
     }
 }
 
+@media(min-height: 1179px) and (max-height: 2500px){
+    #hero{
+        height: 150vh;
+    }
+}
+
 @media (max-width: 850px){ /* Responsive hero window */
     .hero-window{
     flex-direction: column;
     align-items: center;
     margin-bottom: 15%;
-}
-}
+    }
 
-@media (max-width: 850px){ /* Responsive main pic */
-    .hero-window figure{
+    .hero-window figure{ /* Responsive main pic */
         width: 95%;
     }
 
@@ -357,10 +355,10 @@ li a:active{
         min-width: 70%;
         margin-top: 3rem;
         margin-left: 0;
-}
+    }
 }
 
-@media (max-width: 550px){
+@media (max-width: 550px){ /* Responsive main pic */
     .main-pic{
         max-width: 70%;
         min-width: 75%;
@@ -397,9 +395,6 @@ li a:active{
         font-size: 2rem;
         margin-bottom: 1rem;
     }
-}
-
-@media(max-width: 850px){
     .button{
         width: 100px;
         margin-top: 5%;
@@ -426,8 +421,8 @@ li a:active{
     color: #E94560;
 }
 
-.header-title:hover .title-p h1::after{
-    transform: scaleX(1);
+.header-title:hover .title-p h1::after{    /* for the underline title effect */
+    transform: scaleX(.8);
     transform-origin: bottom left;
 }
 
@@ -445,8 +440,7 @@ li a:active{
     position: relative;
 }
 
-.title-p h1::after{
-    /* for the underline title effect */
+.title-p h1::after{ /* for the underline title effect */
     content: '';
     position: absolute;
     width: 40%;
@@ -455,7 +449,7 @@ li a:active{
     bottom: 0;
     left: 0;
     background-color: rgba(233, 69, 96, .4);
-    transform-origin: bottom right;
+    transform-origin: bottom left;
     transition: transform 0.25s ease-out;
 }
 
@@ -553,6 +547,7 @@ li a:active{
 
 @media(max-width: 400px){
     .title-p p{
+        font-size: 1.2rem;
         margin-left: 2rem;
         margin-right: 1rem;
     }
@@ -588,11 +583,35 @@ li a:active{
     margin: 0px;
     color: whitesmoke;
     box-shadow: rgba(15, 52, 96, 0.5) -15px 0px 25px -15px inset;
+    position: relative;
 }
+
+.quote::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .4;
+    background-image: url(assets/images/galaxy.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+}
+
 
 .fa-quote-right{
     font-size: 100px;
     align-self: center; 
+    z-index: 2;
+}
+
+blockquote{
+    z-index: 2;
 }
 
 blockquote p{
@@ -611,6 +630,7 @@ blockquote p{
     height: 35%;
     width: 100%;
     margin: -15px 0 60px auto;
+    z-index: 2;
 }
 
 .autor-content figure{
@@ -734,7 +754,7 @@ blockquote p{
 
 .contact-window{
     height: 80%;
-    width: 80%;
+    width: 75%;
     border-radius: 30px;
     border: solid #CCCCCC 1px;
     background-color: #F2F2F2;
@@ -758,6 +778,9 @@ blockquote p{
 .contact-container h2{
     font-size: 5vh;
     color: #141414;
+    background-color: #ea6a7f;
+    padding: 1.5%;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 }
 
 .icons-contact{
@@ -765,7 +788,7 @@ blockquote p{
     flex-direction: column;
     align-items: flex-start;
     z-index: 2;
-    margin-top: 18%;
+    margin-top: 10%;
 }
 
 .contact-info{
@@ -789,7 +812,7 @@ blockquote p{
 }
 
 .icons{
-    font-size: 2.2rem;
+    font-size: 3rem;
     color: #1D055F;
     margin: 0px 1.2vw;
     background-color: transparent;
@@ -814,7 +837,7 @@ blockquote p{
 }
 
 .logo{
-    max-width: 100px;
+    max-width: 90px;
     min-width: 150px;
     align-self: flex-end;
 }
