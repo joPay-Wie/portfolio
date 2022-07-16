@@ -1,6 +1,6 @@
 /********* GENERAL STYLES *********/
 
-/* Fonts */
+/*** Fonts ***/
 @font-face{
     font-family: poppinsBold;
     src: url(assets/Poppins-Bold.ttf);
@@ -26,7 +26,7 @@
     src: url(assets/RemachineScript_Personal_Use.ttf);
 }
 
-/* Universal styles */
+/*** Universal styles ***/
 
 html, body{
     margin: 0;
@@ -87,7 +87,7 @@ address{
     z-index: 3;
 }
 
-/* Section media queries */
+/*** Section media queries ***/
 
 @media (max-width: 1081px) and (min-width: 1005px){
     .section{
@@ -113,7 +113,7 @@ address{
     }
 }
 
-/*********** Here starts each section specific styles ***********/
+/**************** Here starts each section specific styles ****************/
 
 /********* NAVIGATION BAR *********/
 
@@ -148,8 +148,8 @@ header{
 }
 
 li{
-    padding: 0 .7rem;
-    margin: auto 2rem;
+    padding: 0 .2rem;
+    margin: auto 3rem;
     letter-spacing: 2px;
     font-family: poppinsLight;
 }
@@ -162,16 +162,12 @@ li:active{
     background: rgba(255, 215, 248, 1);
     box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
     border-radius: 30px;
-    letter-spacing: 1.59px;    
-}
-
-li a:active{
-    font-family: poppinsSemiBold;
 }
 
 .li-contact{
     background-color: #604d95;
     border-radius: 30px;
+    padding: 0 .4rem;
 }
 
 .li-contact a:hover{
@@ -180,6 +176,8 @@ li a:active{
 
 .li-contact a:active{
     color: #1A1A2E;
+    font-family: poppinsSemiBold;
+    letter-spacing: 1.58px;
 }
 
 .flag-container{
@@ -200,7 +198,7 @@ li a:active{
     box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
 }
 
-/* Header and navbar media queries */
+/*** Header and navbar media queries ***/
 
 @media(max-width: 850px){
     .header-navbar{
@@ -212,7 +210,7 @@ li a:active{
     }
 }
 
-/********* HERO *********/
+/************ HERO *************/
 
 #hero{
     height: 650px;
@@ -263,7 +261,7 @@ li a:active{
     margin-left: 20%;
 }
 
-/* Hero text and button */
+/*** Hero text and button ***/
 
 .hero-text{
     display: flex;
@@ -327,10 +325,10 @@ li a:active{
 }
 
 .button:active{
-    box-shadow: rgba(0, 0, 0, .2) 0px -50px 36px -28px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px inset, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px inset, rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset;
 } 
 
-/* Hero media queries */ 
+/*** Hero media queries ***/ 
 
 @media(max-width: 850px) and (min-width:500px){
     #hero{
@@ -534,7 +532,7 @@ li a:active{
     color: #ea6a7f;
 }
 
-/* Skills and Project common media queries */
+/*** Skills and Project common media queries ***/
 
 @media (max-width: 850px){
     .title-p h1{
@@ -548,7 +546,7 @@ li a:active{
     }
 }
 
-@media(max-width: 1020px){
+@media(max-width: 1020px){ /* responsive underline effect */
     .header-title{
         flex-direction: column;
     }
@@ -563,7 +561,7 @@ li a:active{
     }
     
     .header-title:hover .little-pic{
-        transform: translateX(-20%);
+        transform: translateX(-12%);
     }
 
     .header-title:hover .title-p h1::after{
@@ -593,7 +591,7 @@ li a:active{
 }
 
 
-/********* SKILLS SECTION *********/
+/*********** SKILLS SECTION ***********/
 
 .colored{ /* programming languages icons */
     font-size: 4.5em;
@@ -602,7 +600,7 @@ li a:active{
     display: block;
 }
 
-/********* QUOTE SECTION *********/
+/*********** QUOTE SECTION ***********/
 
 .quote{
     height: 600px;
@@ -681,7 +679,7 @@ blockquote p{
     margin-left: 2%;
 }
 
-/* Quote media queries */
+/*** Quote media queries ***/
 
 @media(max-width: 1053px) and (min-width: 740px){
     .quote{
@@ -738,7 +736,7 @@ blockquote p{
     }
 }
 
-/********* PROJECTS SECTION *********/
+/*********** PROJECTS SECTION ***********/
 
 .project-box a{
     display: flex;
@@ -752,7 +750,7 @@ blockquote p{
     margin-bottom: 2rem;
 }
 
-/********* CONTACT ME SECTION *********/
+/*********** CONTACT ME SECTION ***********/
 
 #contact-me{
     display: flex;
@@ -858,7 +856,7 @@ blockquote p{
     margin-left: .7rem;
 }
 
-.icons-nd-logo{ /* this only appears in responsive */
+.icons-nd-logo{ /* this only appears when responsive */
     display: flex;
     height: 50%;
     flex-direction: row;
@@ -873,9 +871,11 @@ blockquote p{
     max-width: 100px;
     min-width: 110px;
     align-self: flex-end;
+    border-bottom: 1px dashed rgba(134, 134, 134, 0.3);
+
 }
 
-/* contact me media queries */
+/*** contact me media queries ***/
 
 @media(max-width: 836px) and (min-width:250px){
     #contact-me {
@@ -940,7 +940,6 @@ blockquote p{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-bottom: 2px dashed rgba(134, 134, 134, 0.3);
     }
 }
 
@@ -958,7 +957,7 @@ blockquote p{
     }
 }
 
-/* FORM */
+/*** FORM ***/
 
 form{
     display: flex;
@@ -1000,7 +999,7 @@ form .button{
     cursor: pointer;
 }
 
-/* form media queries */
+/*** form media queries ***/
 
 @media (max-width: 836px) and (min-width:250px){
     form{
@@ -1008,7 +1007,7 @@ form .button{
     }
 }
 
-/********* FOOTER *********/
+/*********** FOOTER ***********/
 
 footer{
     width: 100%;
@@ -1066,7 +1065,7 @@ strong{
     color: #E94560;
 }
 
-/* footer media queries */
+/*** footer media queries ***/
 
 @media (max-width: 450px){
     .ul-footer li{
@@ -1075,4 +1074,24 @@ strong{
     .ul-footer a{
         font-size: 2.8vw;
     }
+}
+
+/***** spanish version styles *******/
+
+.under{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.under h1 {
+    font-family: poppinsSemiBold;
+    color: #E94560;
+    font-size: 6vh;
+}
+
+.construction-pic{
+    width: 50%;
 }
