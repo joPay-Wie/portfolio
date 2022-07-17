@@ -155,8 +155,12 @@ li{
 }
 
 li a:hover{
-    color: #E94560;
+    color: rgb(255, 255, 255);
 } 
+
+li a:active{
+    color:#E94560;
+}
 
 li:active{
     background: rgba(255, 215, 248, 1);
@@ -171,7 +175,7 @@ li:active{
 }
 
 .li-contact a:hover{
-    color:rgba(255, 215, 248, 1);
+    color: #ea6a7f;;
 }
 
 .li-contact a:active{
@@ -269,26 +273,6 @@ li:active{
     justify-content: space-between;
 }
 
-.hero-text span{
-    font-size: 1.3rem;
-    color: whitesmoke;
-}
-
-.hero-text span strong{ /* glowing Jo Pay */
-    -webkit-animation: glow 2s ease-in-out infinite alternate;
-    -moz-animation: glow 2s ease-in-out infinite alternate;
-    animation: glow 2s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-  }
-
 .hero-text h2{
     font-size: 3rem;
     color: #080808;
@@ -308,6 +292,37 @@ li:active{
     margin-top: -25px;
 }
 
+.hero-text span{
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+
+.hero-text span strong{ /* glowing Jo Pay */
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(230, 0, 115, 1), 0 0 40px rgba(230, 0, 115, 1), 0 0 50px rgba(230, 0, 115, 1), 0 0 60px rgba(230, 0, 115, 1), 0 0 70px rgba(230, 0, 115, 1);
+    }
+    to {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 77, 166, 1), 0 0 40px rgba(255, 77, 166, 1), 0 0 50px rgba(255, 77, 166, 1), 0 0 60px rgba(255, 77, 166, 1), 0 0 70px rgba(255, 77, 166, 1), 0 0 80px rgba(255, 77, 166, 1);
+    }
+  }
+
+@media (max-width: 450px){
+    @-webkit-keyframes glow {    
+    from {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1), 0 0 15px rgba(230, 0, 115, 1), 0 0 20px rgba(230, 0, 115, 1), 0 0 25px rgba(230, 0, 115, 1), 0 0 30px rgba(230, 0, 115, 1), 0 0 35px rgba(230, 0, 115, 1);
+      }
+      to {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 15px rgba(255, 77, 166, 1), 0 0 20px rgba(255, 77, 166, 1), 0 0 25px rgba(255, 77, 166, 1), 0 0 30px rgba(255, 77, 166, 1), 0 0 35px rgba(255, 77, 166, 1), 0 0 40px rgba(255, 77, 166, 1);
+      }
+    }
+    }
+
 .button{
     font-size: 1.2rem;
     margin-top: 2rem;
@@ -318,10 +333,7 @@ li:active{
     border-radius: 30px;
     letter-spacing: 0.1em;
     text-align: center;
-}
-
-.button:hover{
-    box-shadow: rgba(22, 33, 62, .2) 0px 5px 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset;
 }
 
 .button:active{
@@ -481,14 +493,14 @@ li:active{
 .title-p p{
     margin-top: 2%;
     transition-property: transform;
-    transition-duration: .5s;
+    transition-duration: .2s;
 }
 
 .little-pic{
     max-width: 300px;
     min-width: 150px;
     transition-property: transform;
-    transition-duration: .5s;
+    transition-duration: .3s;
 }
 
 .grid{
@@ -510,12 +522,12 @@ li:active{
     text-align: center;
     cursor: pointer;
     transition-property: transform;
-    transition-duration: .5s;
+    transition-duration: .3s;
 }
 
 .skills-project-box:hover{
     border: 1px solid #ff86eb;
-    transform: scale(120%);
+    transform: scale(105%);
     box-shadow: rgba(25, 60, 77, 0.4) 0px 25px 20px -20px;
 }
 
@@ -1007,6 +1019,18 @@ form .button{
     }
 }
 
+.copyright{
+    display: flex;
+    flex-direction: row;
+    color:rgba(134, 134, 134, 0.2);
+    font-family: poppinsLight;
+    font-size: 1rem;
+    align-self: flex-end;
+    text-align: left;
+    margin-bottom: 1%;
+    z-index: 2;
+}
+
 /*********** FOOTER ***********/
 
 footer{
@@ -1042,7 +1066,7 @@ footer{
 }
 
 .foot-icon:hover{
-    color: #E94560;
+    color: white;
     border: 1px solid rgb(214, 214, 214);
     background-color: #121b32; 
 }
@@ -1054,10 +1078,11 @@ strong{
 }
 
 .build-with{
+    font-family: poppinsLight;
     color: white;
-    font-size: 15px;
-    margin-right: 1.5vw;
-    margin-bottom: .5vw;
+    font-size: 1.2rem;
+    margin-right: 1vw;
+    margin-bottom: 0;
     align-self: flex-end;
 }
 
@@ -1070,6 +1095,7 @@ strong{
 @media (max-width: 450px){
     .ul-footer li{
         padding: 0;
+        margin: auto 1rem;
     }
     .ul-footer a{
         font-size: 2.8vw;
@@ -1082,16 +1108,26 @@ strong{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .under h1 {
     font-family: poppinsSemiBold;
-    color: #E94560;
+    color: #1D055F;
     font-size: 6vh;
 }
 
 .construction-pic{
-    width: 50%;
+    width: 40%;
+}
+
+.get-back{
+    color:#1D055F; 
+    width: 100%;
+}
+
+.fa-circle-arrow-left{
+    margin-left: 1%;
+    font-size: 3rem;
 }
