@@ -83,6 +83,7 @@ address{
     align-items: center;
     height: 900px;
     width: 100%;
+    max-width: 100%;
     box-shadow: rgba(15, 52, 96, 0.5) -25px 0px 25px -25px inset;
     z-index: 3;
 }
@@ -103,7 +104,7 @@ address{
 
 @media (max-width: 728px) and (min-width: 280px){
     .section{
-        height: 2000px;
+        height: 2050px;
     }
 }
 
@@ -128,7 +129,7 @@ header{
 }
 
 .header-navbar figure img{
-    margin-left: -43%;
+    margin-left: -45%;
 }
 
 .header-navbar{
@@ -882,11 +883,11 @@ blockquote p{
 
 @media(max-width: 836px) and (min-width:250px){
     #contact-me {
-        height: 1250px;
+        height: 1300px;
     }
 
     .contact-window {
-        height: 900px;
+        height: 1000%;
         width: 75%;
     }
 
@@ -992,6 +993,7 @@ input[type=submit]{
 
 input::placeholder, textarea::placeholder {
     color: #c1b6db;
+    font-size: 1rem;
 }
 
 form .button{
@@ -1000,6 +1002,7 @@ form .button{
     width: 50%;
     align-self: center;
     cursor: pointer;
+    text-align: center;
 }
 
 /*** form media queries ***/
