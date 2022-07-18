@@ -768,25 +768,11 @@ blockquote p{
     display: flex;
     height: 750px;
     width: 100%; 
-    position: relative;
-    background: black;
-    z-index: 1;  
-}
-
-#contact-me::before{
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    opacity: .75;
+    z-index: 1;
     background-image: url(assets/images/code2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: center;
+    background-position-y: center;  
 }
 
 .contact-window{
@@ -1019,12 +1005,12 @@ form .button{
     }
 }
 
-.copyright{
+.copyright{  /* image copyright */
     display: flex;
     flex-direction: row;
-    color:rgba(134, 134, 134, 0.2);
+    color:rgba(134, 134, 134, 0.5);
     font-family: poppinsLight;
-    font-size: 1rem;
+    font-size: .5rem;
     align-self: flex-end;
     text-align: left;
     margin-bottom: 1%;
@@ -1095,7 +1081,7 @@ strong{
 @media (max-width: 450px){
     .ul-footer li{
         padding: 0;
-        margin: auto 1rem;
+        margin: auto .5rem;
     }
     .ul-footer a{
         font-size: 2.8vw;
@@ -1112,14 +1098,27 @@ strong{
     align-items: center;
 }
 
-.under h1 {
+.under h1{
     font-family: poppinsSemiBold;
     color: #1D055F;
     font-size: 6vh;
+    text-align: center;
 }
 
 .construction-pic{
     width: 40%;
+}
+
+@media (max-width: 850px) and (min-width: 450px){
+    .construction-pic{
+        width: 70%;
+    }
+}
+
+@media (max-width: 450px){
+    .construction-pic{
+        width: 100%;
+    }
 }
 
 .get-back{
