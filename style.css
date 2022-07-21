@@ -69,6 +69,13 @@ p{
     background: #ff86eb;
 }
 
+*:focus{
+    border: solid 1px #FFF89A;
+    outline-color: rgba(230, 0, 115, 1);   
+}
+
+
+
 address{
     font-style: normal;
 }
@@ -173,10 +180,6 @@ li:active{
     background-color: #604d95;
     border-radius: 30px;
     padding: 0 .4rem;
-}
-
-.li-contact a:hover{
-    color: #ea6a7f;;
 }
 
 .li-contact a:active{
@@ -294,7 +297,7 @@ li:active{
 }
 
 .hero-text span{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: whitesmoke;
 }
 
@@ -881,13 +884,23 @@ blockquote p{
 
 /*** contact me media queries ***/
 
+@media (min-width: 1500px){
+    #contact-me{
+        height: 900px;
+    }
+
+    .contact-window {
+        height: 100%;
+    }
+}
+
 @media(max-width: 836px) and (min-width:250px){
     #contact-me {
         height: 1300px;
     }
 
     .contact-window {
-        height: 1000%;
+        height: 100%;
         width: 75%;
     }
 
@@ -907,7 +920,7 @@ blockquote p{
 
 @media (max-width: 710px){
     .contact-window{
-        height: 1100px;
+        height: 1150px;
     }
 
     .contact-container{
@@ -944,6 +957,10 @@ blockquote p{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .info-icons{
+        margin-left: .3rem;
     }
 }
 
