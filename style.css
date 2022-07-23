@@ -636,7 +636,6 @@ li:active{
     background-size: cover;
     background-position-y: center;
     background-attachment: fixed;
-    will-change: transform;
 }
 
 .fa-quote-right{
@@ -1112,7 +1111,7 @@ strong{
         font-size: 1rem;
     }
     
-    strong{
+    .made-jopay{
         font-size: 22px;
     }
 }
@@ -1160,5 +1159,5 @@ strong{
 
 .fa-circle-arrow-left{
     margin-left: 1%;
-    font-size: 3rem;
+    font-size: 3rem;    
 }
