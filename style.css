@@ -70,11 +70,8 @@ p{
 }
 
 *:focus{
-    border: solid 1px #FFF89A;
     outline-color: rgba(230, 0, 115, 1);   
 }
-
-
 
 address{
     font-style: normal;
@@ -176,7 +173,7 @@ li:active{
     border-radius: 30px;
 }
 
-.li-contact{
+.li-contact{  /* this is the contact me 'button' on the navbar */
     background-color: #604d95;
     border-radius: 30px;
     padding: 0 .4rem;
@@ -197,7 +194,7 @@ li:active{
     margin-right: -.5rem;
 }
 
-.flag{
+.flag{  /* language flags */
     margin-left: 1.7rem;
     border-radius: 30px;
 }
@@ -416,7 +413,7 @@ li:active{
     }
 }
 
-@media (max-width: 841px){ /* Hero paragraph */
+@media (max-width: 841px){ /* Responsive hero paragraph */
     .hero-text{
     margin-left: 2%;
     }
@@ -550,43 +547,41 @@ li:active{
 
 /*** Skills and Project common media queries ***/
 
+@media(max-width: 1020px){ 
+    .header-title{
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 850px){
     .title-p h1{
         text-align: center;
     }
+
+    .title-p h1::after{
+        transform: none;
+        display: none;
+    }
+
+    .header-title:hover .title-p p{
+        transform: none;
+    }
+    
+    .header-title:hover .little-pic{
+        transform: none;
+    }
+
+    .header-title:hover .title-p h1::after{
+        transform: none;
+    }
 }
+
 
 @media (max-width: 450px){
     .title-p h1{
     font-size: 4vh;
     }
-}
 
-@media(max-width: 1020px){ /* responsive underline effect */
-    .header-title{
-        flex-direction: column;
-    }
-
-    .title-p h1::after{
-        left: 30%;
-        transform-origin: center;
-    }
-
-    .header-title:hover .title-p p{
-        transform: translateY(-6%);
-    }
-    
-    .header-title:hover .little-pic{
-        transform: translateX(-12%);
-    }
-
-    .header-title:hover .title-p h1::after{
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-}
-
-@media(max-width: 450px){
     .title-p p{
         font-size: 1.5rem;
         margin-left: 2.5rem;
@@ -606,13 +601,12 @@ li:active{
     }
 }
 
-
 /*********** SKILLS SECTION ***********/
 
 .colored{ /* programming languages icons */
     font-size: 4.5em;
-    margin-top: 24px;
-    margin-bottom: 20px;
+    margin-top: 7%;
+    margin-bottom: 7%;
     display: block;
 }
 
@@ -620,11 +614,11 @@ li:active{
 
 .quote{
     height: 600px;
-    background-color: #E94560;
     margin: 0px;
     color: whitesmoke;
     box-shadow: rgba(15, 52, 96, 0.5) -15px 0px 25px -15px inset;
     position: relative;
+    background-color: #E94560;
 }
 
 .quote::before{
@@ -635,13 +629,14 @@ li:active{
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: -1;
     opacity: .4;
     background-image: url(assets/images/galaxy.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
     background-attachment: fixed;
+    will-change: transform;
 }
 
 .fa-quote-right{
@@ -761,7 +756,7 @@ blockquote p{
 }
 
 .project-pic{
-    height: 90px;
+    height: 15vh;
     margin-bottom: 2rem;
 }
 
@@ -784,7 +779,7 @@ blockquote p{
     background-position-y: center;  
 }
 
-.contact-window{
+.contact-window{  /*white window in contact section */
     height: 80%;
     width: 75%;
     border-radius: 30px;
@@ -894,7 +889,7 @@ blockquote p{
     }
 }
 
-@media(max-width: 836px) and (min-width:250px){
+@media(max-width: 836px) and (min-width: 250px){
     #contact-me {
         height: 1300px;
     }
@@ -934,12 +929,6 @@ blockquote p{
     }
 }
 
-@media (min-width: 830px){
-    .logo{
-        display: none;
-    }
-}
-
 @media (max-width: 1010px) and (min-width: 840px) {
     .icons-nd-logo {
         display: flex;
@@ -949,6 +938,13 @@ blockquote p{
     .icons-nd-logo figure{
         flex-direction: row;
         justify-content: center;
+    }
+
+}
+
+@media(min-width: 830px){
+    .logo{
+        display: none;
     }
 }
 
@@ -1110,6 +1106,14 @@ strong{
     }
     .ul-footer a{
         font-size: 2.8vw;
+    }
+
+    .build-with{
+        font-size: 1rem;
+    }
+    
+    strong{
+        font-size: 22px;
     }
 }
 
