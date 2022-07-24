@@ -625,7 +625,7 @@ li:active{
     content: '';
     display: block;
     position: absolute;
-    left: 0
+    left: 0;
     top: 0;
     width: 100%;
     height: 100%;
@@ -633,7 +633,6 @@ li:active{
     z-index: -1;
     background-image: url(assets/images/galaxy.jpeg);
     background-repeat: no-repeat;
-    /*background-size: cover;*/
     background-position-y: center;
     background-attachment: fixed;
 }
