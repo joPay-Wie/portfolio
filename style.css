@@ -633,7 +633,7 @@ li:active{
     z-index: -1;
     background-image: url(assets/images/galaxy.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
     background-position-y: center;
     background-attachment: fixed;
 }
@@ -711,10 +711,6 @@ blockquote p{
 @media(max-width: 671px){
     blockquote p{
         margin: 0;
-    }
-
-    .quote::before{
-        background-attachment: scroll
     }
 }
 
