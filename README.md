@@ -14,4 +14,4 @@ by **Jo Pay**
 
 *You can check the deployment here: [Jo Pay's Portfolio](https://portfolio.jopay-wie.vercel.app)*
 
-# Thank you! &#128156; 
+### Thank you! &#128156; 
