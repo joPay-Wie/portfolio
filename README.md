@@ -12,6 +12,11 @@ by **Jo Pay**
 - My projects
 - Contact information
 
+## Features
+1. Beautiful design
+2. Full responsive
+3. Accesibility
+
 *You can check the deployment here: [Jo Pay's Portfolio](https://portfolio-jopay-wie.vercel.app)*
 
 ### Thank you! &#128156; 
