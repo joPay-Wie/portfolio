@@ -750,7 +750,6 @@ blockquote p{
 
     .quote::before{
         background-position-y: initial;
-        position: fixed;
     }
 }
 
