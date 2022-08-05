@@ -396,7 +396,6 @@ li:active{
         min-width: 75%;
         margin-top: 5rem;
     }
-}
 
 .flag-mobile{ /* Language flags for mobile gadgets */
     justify-content: flex-start;
@@ -405,6 +404,11 @@ li:active{
     width: 100%;
     align-self: flex-start;
     margin-bottom: 5%;
+}
+.hero::before{
+    background-image: url(assets/images/web-development4.png);
+}
+
 }
 
 @media (min-width: 850px) {
