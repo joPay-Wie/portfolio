@@ -575,6 +575,10 @@ li:active{
     .header-title:hover .title-p h1::after{
         transform: none;
     }
+
+    .skills-project-box:hover{
+        transform: none;
+    }
 }
 
 
