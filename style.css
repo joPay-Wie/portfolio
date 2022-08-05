@@ -38,6 +38,10 @@
     border: 2px solid white;
 }
 
+*::-webkit-scrollbar-thumb:active{
+    background-color:#ea6a7f;
+}
+
 *::-webkit-scrollbar-track{
     background: white;
 }
