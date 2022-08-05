@@ -750,6 +750,7 @@ blockquote p{
 
     .quote::before{
         background-position-y: initial;
+        background-attachment: initial;
     }
 }
 
