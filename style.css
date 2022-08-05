@@ -28,6 +28,24 @@
 
 /*** Universal styles ***/
 
+*::-webkit-scrollbar{
+    width: 16px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color:#E94560;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+*::-webkit-scrollbar-track{
+    background: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 html, body{
     margin: 0;
     font-size: 75%;
@@ -750,6 +768,7 @@ blockquote p{
 
     .quote::before{
         background-position-y: initial;
+
     }
 }
 
