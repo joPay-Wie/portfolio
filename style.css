@@ -748,9 +748,15 @@ blockquote p{
         font-size: 4em;
     }
 
+    .quote{
+        background-image: url(assets/images/galaxy.jpeg);
+        background-attachment: fixed;
+    }
+
     .quote::before{
-        background-position-y: initial;
-        background-attachment: initial;
+        display: none;
+        /* background-position-y: initial;
+        background-attachment: initial; */
     }
 }
 
