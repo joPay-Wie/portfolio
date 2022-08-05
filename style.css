@@ -356,6 +356,7 @@ li:active{
 
     #hero::before{
         background-position-x: center;
+        background-image: url(assets/images/web-development4.png);  
     }
 }
 
@@ -396,6 +397,7 @@ li:active{
         min-width: 75%;
         margin-top: 5rem;
     }
+}
 
 .flag-mobile{ /* Language flags for mobile gadgets */
     justify-content: flex-start;
@@ -404,11 +406,6 @@ li:active{
     width: 100%;
     align-self: flex-start;
     margin-bottom: 5%;
-}
-.hero::before{
-    background-image: url(assets/images/web-development4.png);
-}
-
 }
 
 @media (min-width: 850px) {
@@ -745,6 +742,10 @@ blockquote p{
 @media(max-width: 425px){
     .autor-name{
         font-size: 4em;
+    }
+
+    .quote::before{
+        background-position-y: initial;
     }
 }
 
