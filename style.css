@@ -635,6 +635,7 @@ li:active{
     background-repeat: no-repeat;
     background-position-y: center;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .fa-quote-right{
