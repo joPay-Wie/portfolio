@@ -28,6 +28,28 @@
 
 /*** Universal styles ***/
 
+*::-webkit-scrollbar{
+    width: 16px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color:#E94560;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+*::-webkit-scrollbar-thumb:active{
+    background-color:#ea6a7f;
+}
+
+*::-webkit-scrollbar-track{
+    background: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 html, body{
     margin: 0;
     font-size: 75%;
@@ -356,6 +378,7 @@ li:active{
 
     #hero::before{
         background-position-x: center;
+        background-image: url(assets/images/web-development4.png);  
     }
 }
 
@@ -574,6 +597,10 @@ li:active{
     .header-title:hover .title-p h1::after{
         transform: none;
     }
+
+    .skills-project-box:hover{
+        transform: none;
+    }
 }
 
 
@@ -742,6 +769,11 @@ blockquote p{
 @media(max-width: 425px){
     .autor-name{
         font-size: 4em;
+    }
+
+    .quote::before{
+        background-position-y: initial;
+
     }
 }
 
